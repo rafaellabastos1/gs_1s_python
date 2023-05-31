@@ -53,7 +53,8 @@ print('Seja bem vindo à PlanTech! No que podemos te ajudar?'
 
 
 #Opção 7 do menu: feedback ---- o usuário pode dar um feedback sobre a resolução de suas dúvidas, da performace do
-#   sistema, sobre a indicação dos tratamentos para as plantações, sobre a usabilidade do projeto
+#   sistema, sobre a indicação dos tratamentos para as plantações, sobre a usabilidade do projeto e experiência com 
+#   o site
 
 
 
