@@ -108,6 +108,6 @@ match opcaoMenu:
 #Opção 8 do menu: outro ---- Colocar pequenas informações e onde pode encontrá-las: se quer tirar dúvidas mais
 #   específicas, entrar no nosso ChatBot; Se quer textos mais explicativos como agricultura sustentável, uso de
 #   IA's generativas na produção, distribuição de alimentos pelo mundo, modelos de cultivos eficientes e calendário
-#   de controle de pragas, entrar no site da PlanTech
+#   de controle de pragas, entrar no site da PlanTech.
       case 8:
             print("-")
