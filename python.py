@@ -1,14 +1,14 @@
 #menu
 print('Seja bem vindo à PlanTech! No que podemos te ajudar?'
       '\n'
-      '\n1. Desejo saber mais sobre a missão da PlanTech'
-      '\n2. Desejo saber sobre o funcionamento do drone'
-      '\n3. Quero comprar um drone para detectar pragas'
-      '\n4. Identifiquei uma praga na plantação. O que faço agora?'
-      '\n5. Quem faz parte do projeto PlanTech?'
-      '\n6. Quero indicar um tratamento para uma praga'
-      '\n7. Feedback'
-      '\n8. Outro')
+      '\n1. Desejo saber mais sobre a missão da PlanTech' #Luiz
+      '\n2. Desejo saber sobre o funcionamento do drone' #Igor
+      '\n3. Quero comprar um drone para detectar pragas' #Luiz
+      '\n4. Identifiquei uma praga na plantação. O que faço agora?' #Rafa
+      '\n5. Quem faz parte do projeto PlanTech?' #Douglas
+      '\n6. Quero indicar um tratamento para uma praga' #Gustavo
+      '\n7. Feedback' #Douglas
+      '\n8. Outro') #Rafa
 
 #Opção 1 do menu: desejo saber mais sobre a missão da PlanTech ---- Colocar o primeiro e o último parágrafo do
 #   arquivo "Descrição geral da solução 2"
