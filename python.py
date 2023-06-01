@@ -45,30 +45,42 @@ def Indicacao():
                   print('Faça o tratamento e')
             elif nomePraga == 'Cupim do montículo' or nomePraga == 'Cupim do monticulo' or nomePraga == 'cupim do montículo' or nomePraga == 'cupim do monticulo' or  nomePraga == 'Cupim do Montículo' or nomePraga == 'Cupim do Monticulo':       
                   print('Faça o tratamento f')
+            else:
+                  print('Essa praga não está em nosso sistema')
       
       elif nomePlanta == 'arroz' or nomePlanta == 'Arroz':
             if nomePraga == 'Lagarta-do-cartucho' or nomePraga == 'Lagarta do cartucho' or nomePraga == 'lagarta-do-cartucho' or nomePraga == 'lagarta do cartucho' or nomePraga == 'Lagarta-do-Cartucho' or nomePraga == 'Lagarta do Cartucho':
                   print ('Faça o tratamento g')
             elif nomePraga == 'Percevejo-do-arroz' or nomePraga == 'Percevejo do arroz' or nomePraga == 'percevejo-do-arroz' or nomePraga == 'percevejo do arroz' or nomePraga == 'Percevejo-do-Arroz' or nomePraga == 'Percevejo do Arroz':
                   print ('Faça o tratamento h')
+            else:
+                  print('Essa praga não está em nosso sistema')
       
       elif nomePlanta == 'aveia' or nomePlanta == 'Aveia':
             if nomePraga == 'Lagarta-do-cartucho' or nomePraga == 'Lagarta do cartucho' or nomePraga == 'lagarta-do-cartucho' or nomePraga == 'lagarta do cartucho' or nomePraga == 'Lagarta-do-Cartucho' or nomePraga == 'Lagarta do Cartucho':
                   print ('Faça o tratamento i')
+            else:
+                  print('Essa praga não está em nosso sistema')
       
       elif nomePlanta == 'cafe' or nomePlanta == 'café' or nomePlanta == 'Cafe' or nomePlanta == 'Café':
             if nomePraga == 'Lagarta helicoverpa' or nomePraga == 'lagarta helicoverpa' or nomePraga == 'Lagarta Helicoverpa':
                   print ('Faça o tratamento j')
+            else:
+                  print('Essa praga não está em nosso sistema')
 
       elif nomePlanta == 'Cana-de-açúcar' or nomePlanta == 'Cana-de-açucar' or nomePlanta == 'Cana-de-acucar' or nomePlanta == 'Cana-de-acúcar' or nomePlanta == 'Cana de açúcar' or nomePlanta == 'Cana de açucar' or nomePlanta == 'Cana de acucar' or nomePlanta == 'Cana de acúcar' or nomePlanta == 'cana-de-açúcar' or nomePlanta == 'cana-de-açucar' or nomePlanta == 'cana-de-acucar' or nomePlanta == 'cana-de-acúcar' or nomePlanta == 'cana de açúcar' or nomePlanta == 'cana de açucar' or nomePlanta == 'cana de acucar' or nomePlanta == 'cana de acúcar' or nomePlanta == 'Cana-de-Açúcar' or nomePlanta == 'Cana-de-Açucar' or nomePlanta == 'Cana-de-Acucar' or nomePlanta == 'Cana-de-Acúcar' or nomePlanta == 'Cana de Açúcar' or nomePlanta == 'Cana de Açucar' or nomePlanta == 'Cana de Acucar' or nomePlanta == 'Cana de Acúcar':
             if nomePraga == 'Lagarta-do-cartucho' or nomePraga == 'Lagarta do cartucho' or nomePraga == 'lagarta-do-cartucho' or nomePraga == 'lagarta do cartucho' or nomePraga == 'Lagarta-do-Cartucho' or nomePraga == 'Lagarta do Cartucho':
                   print('Faça o tratamento k')
+            else:
+                  print('Essa praga não está em nosso sistema')
       
       elif nomePlanta == 'Feijao' or nomePlanta == 'Feijão' or nomePlanta == 'feijao' or nomePlanta == 'Feijão':
             if nomePraga == 'Lagarta-do-cartucho' or nomePraga == 'Lagarta do cartucho' or nomePraga == 'lagarta-do-cartucho' or nomePraga == 'lagarta do cartucho' or nomePraga == 'Lagarta-do-Cartucho' or nomePraga == 'Lagarta do Cartucho':
                   print('Faça o tratamento l')
             elif nomePraga == 'Lagarta helicoverpa' or nomePraga == 'lagarta helicoverpa' or nomePraga == 'Lagarta Helicoverpa':
                   print ('Faça o tratamento m')
+            else:
+                  print('Essa praga não está em nosso sistema')
       
       elif nomePlanta == 'girassol' or nomePlanta == 'Girassol':
             if nomePraga == 'Percevejo-verde-pequeno' or nomePraga == 'Percevejo-Verde-Pequeno' or nomePraga == 'percevejo-verde-pequeno' or nomePraga == 'Percevejo verde pequeno' or nomePraga == 'Percevejo verde pequeno' or nomePraga == 'percevejo verde pequeno':
@@ -77,6 +89,8 @@ def Indicacao():
                   print('Faça o tratamento o')
             elif nomePraga == 'Percevejo-marrom' or nomePraga == 'percevejo-marrom' or nomePraga == 'Percevejo-Marrom' or nomePraga == 'Percevejo marrom' or nomePraga == 'percevejo marrom' or nomePraga == 'Percevejo Marrom':
                   print('Faça o tratamento p')
+            else:
+                  print('Essa praga não está em nosso sistema')
       
       elif nomePlanta == 'milho' or nomePlanta == 'Milho':
             if nomePraga == 'Percevejo-barriga-verde' or nomePraga == 'Percevejo-Barriga-Verde' or nomePraga == 'percevejo-barriga-verde' or nomePraga == 'Percevejo barriga verde' or nomePraga == 'Percevejo Barriga Verde' or nomePraga == 'percevejo-barriga-verde':
@@ -91,6 +105,8 @@ def Indicacao():
                   print('Faça o tratamento u')
             elif nomePraga == 'Pulgão' or nomePraga == 'Pulgao' or nomePraga == 'pulgão' or nomePraga == 'pulgao':
                   print('Faça o tratamento v')
+            else:
+                  print('Essa praga não está em nosso sistema')
       
       elif nomePlanta == 'soja' or nomePlanta == 'Soja':
             if nomePraga == 'Lagarta-do-cartucho' or nomePraga == 'Lagarta do cartucho' or nomePraga == 'lagarta-do-cartucho' or nomePraga == 'lagarta do cartucho' or nomePraga == 'Lagarta-do-Cartucho' or nomePraga == 'Lagarta do Cartucho':
@@ -103,13 +119,18 @@ def Indicacao():
                   print('Faça o tratamento z')
             elif nomePraga == 'Lagarta helicoverpa' or nomePraga == 'lagarta helicoverpa' or nomePraga == 'Lagarta Helicoverpa':
                   print ('Faça o tratamento aa')
+            else:
+                  print('Essa praga não está em nosso sistema')
             
       elif nomePlanta == 'trigo' or nomePlanta == 'Trigo':
             if nomePraga == 'Lagarta-do-cartucho' or nomePraga == 'Lagarta do cartucho' or nomePraga == 'lagarta-do-cartucho' or nomePraga == 'lagarta do cartucho' or nomePraga == 'Lagarta-do-Cartucho' or nomePraga == 'Lagarta do Cartucho':
                   print('Faça o tratamento bb')
             elif nomePraga == 'Percevejo-barriga-verde' or nomePraga == 'Percevejo-Barriga-Verde' or nomePraga == 'percevejo-barriga-verde' or nomePraga == 'Percevejo barriga verde' or nomePraga == 'Percevejo Barriga Verde' or nomePraga == 'percevejo-barriga-verde':
                   print('Faça o tratamento cc')
-
+            else:
+                  print('Essa praga não está em nosso sistema')
+      else:
+            print('Essa planta não está em nosso sistema')
 
 #menu
 opcaoMenu = 0
