@@ -2,7 +2,7 @@ def Tratamentos():
       spodovir = ''
       engeoPlenoS = ''
       bacillus = ''
-      aug = ''
+      aug = '' 
 
 def Plantacao():
       algodao = ''
