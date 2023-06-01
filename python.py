@@ -369,7 +369,24 @@ while opcaoMenu != 9:
 #   plantação pode receber; Mostrar uma mensagem agradecendo e dizendo que essas informações vão para análise e
 #   se estiver tudo correto, serão incluídas no sistema PlanTech
       if opcaoMenu == 6:
-            print("-")
+            # Função para receber as informações do usuário e enviar para análise
+            def informar_tratamento():
+                  nome_praga = input("Informe o nome da praga: ")
+                  tipo_plantacao = input("Informe o tipo de plantação que a praga ataca: ")
+                  tratamento = input("Informe o tipo de tratamento que a praga combinada com essa plantação pode receber: ")
+
+                  # Enviar as informações para análise
+                  enviar_analise(nome_praga, tipo_plantacao, tratamento)
+
+                  # Exibir mensagem de agradecimento
+                  print("Obrigado pelas informações. Elas serão analisadas e, se estiverem corretas, serão incluídas no sistema PlanTech.")
+
+      # Função para enviar as informações para análise
+      def enviar_analise(nome_praga, tipo_plantacao, tratamento):
+
+            # Chamada da função para o usuário informar o tratamento
+            informar_tratamento()
+            
 
 #Opção 7 do menu: feedback ---- o usuário pode dar um feedback sobre a resolução de suas dúvidas, da performace do
 #   sistema, sobre a indicação dos tratamentos para as plantações, sobre a usabilidade do projeto e experiência com 
