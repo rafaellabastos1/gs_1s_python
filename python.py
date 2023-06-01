@@ -250,4 +250,4 @@ while opcaoMenu != 9:
 
 #Opção 9 do menu: encerramento
       if opcaoMenu == 9:
-            print("-")
+            print('\nMuito obrigado, até a próxima!')
