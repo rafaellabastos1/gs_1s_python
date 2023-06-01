@@ -1,3 +1,4 @@
+#Função que compara cada tipo de plantação com cada praga e retorna o tratamento mais adequado para a situação
 def Indicacao():
       spodovir = ('\nTratamento para a sua plantação: Spodovir'
                   '\n1. É um biodefensivo e inseticida microbiológico'
@@ -21,6 +22,7 @@ def Indicacao():
       nomePlanta = input('\nQual o nome da plantação atacada? ')
       nomePraga = input('Qual o nome da praga? ')
 
+      #Algodão
       if nomePlanta == 'algodão' or nomePlanta == 'algodao' or nomePlanta == 'Algodão' or nomePlanta == 'Algodao':
             if nomePraga == 'Lagarta-do-cartucho' or nomePraga == 'lagarta-do-cartucho' or nomePraga == 'Lagarta-do-Cartucho' or nomePraga == 'Lagarta do cartucho' or nomePraga == 'lagarta do cartucho' or nomePraga == 'Lagarta do Cartucho':
                   print(f'\n{spodovir}')
@@ -47,6 +49,7 @@ def Indicacao():
             else:
                   print('Essa praga não está em nosso sistema')
       
+      #Arroz
       elif nomePlanta == 'arroz' or nomePlanta == 'Arroz':
             if nomePraga == 'Lagarta-do-cartucho' or nomePraga == 'Lagarta do cartucho' or nomePraga == 'lagarta-do-cartucho' or nomePraga == 'lagarta do cartucho' or nomePraga == 'Lagarta-do-Cartucho' or nomePraga == 'Lagarta do Cartucho':
                   print (f'{spodovir}')
@@ -58,6 +61,7 @@ def Indicacao():
             else:
                   print('Essa praga não está em nosso sistema')
       
+      #Aveia
       elif nomePlanta == 'aveia' or nomePlanta == 'Aveia':
             if nomePraga == 'Lagarta-do-cartucho' or nomePraga == 'Lagarta do cartucho' or nomePraga == 'lagarta-do-cartucho' or nomePraga == 'lagarta do cartucho' or nomePraga == 'Lagarta-do-Cartucho' or nomePraga == 'Lagarta do Cartucho':
                   print (f'{spodovir}')
@@ -65,6 +69,7 @@ def Indicacao():
             else:
                   print('Essa praga não está em nosso sistema')
       
+      #Café
       elif nomePlanta == 'cafe' or nomePlanta == 'café' or nomePlanta == 'Cafe' or nomePlanta == 'Café':
             if nomePraga == 'Lagarta helicoverpa' or nomePraga == 'lagarta helicoverpa' or nomePraga == 'Lagarta Helicoverpa':
                   print (f'{bacillus}')
@@ -72,6 +77,7 @@ def Indicacao():
             else:
                   print('Essa praga não está em nosso sistema')
 
+      #Cana-de-açúcar
       elif nomePlanta == 'Cana-de-açúcar' or nomePlanta == 'Cana-de-açucar' or nomePlanta == 'Cana-de-acucar' or nomePlanta == 'Cana-de-acúcar' or nomePlanta == 'Cana de açúcar' or nomePlanta == 'Cana de açucar' or nomePlanta == 'Cana de acucar' or nomePlanta == 'Cana de acúcar' or nomePlanta == 'cana-de-açúcar' or nomePlanta == 'cana-de-açucar' or nomePlanta == 'cana-de-acucar' or nomePlanta == 'cana-de-acúcar' or nomePlanta == 'cana de açúcar' or nomePlanta == 'cana de açucar' or nomePlanta == 'cana de acucar' or nomePlanta == 'cana de acúcar' or nomePlanta == 'Cana-de-Açúcar' or nomePlanta == 'Cana-de-Açucar' or nomePlanta == 'Cana-de-Acucar' or nomePlanta == 'Cana-de-Acúcar' or nomePlanta == 'Cana de Açúcar' or nomePlanta == 'Cana de Açucar' or nomePlanta == 'Cana de Acucar' or nomePlanta == 'Cana de Acúcar':
             if nomePraga == 'Lagarta-do-cartucho' or nomePraga == 'Lagarta do cartucho' or nomePraga == 'lagarta-do-cartucho' or nomePraga == 'lagarta do cartucho' or nomePraga == 'Lagarta-do-Cartucho' or nomePraga == 'Lagarta do Cartucho':
                   print(f'{spodovir}')
@@ -79,6 +85,7 @@ def Indicacao():
             else:
                   print('Essa praga não está em nosso sistema')
       
+      #Feijão
       elif nomePlanta == 'Feijao' or nomePlanta == 'Feijão' or nomePlanta == 'feijao' or nomePlanta == 'Feijão':
             if nomePraga == 'Lagarta-do-cartucho' or nomePraga == 'Lagarta do cartucho' or nomePraga == 'lagarta-do-cartucho' or nomePraga == 'lagarta do cartucho' or nomePraga == 'Lagarta-do-Cartucho' or nomePraga == 'Lagarta do Cartucho':
                   print(f'{spodovir}')
@@ -89,6 +96,7 @@ def Indicacao():
             else:
                   print('Essa praga não está em nosso sistema')
       
+      #Girassol
       elif nomePlanta == 'girassol' or nomePlanta == 'Girassol':
             if nomePraga == 'Percevejo-verde-pequeno' or nomePraga == 'Percevejo-Verde-Pequeno' or nomePraga == 'percevejo-verde-pequeno' or nomePraga == 'Percevejo verde pequeno' or nomePraga == 'Percevejo verde pequeno' or nomePraga == 'percevejo verde pequeno':
                   print(f'{engeoPlenoS}'
@@ -105,6 +113,7 @@ def Indicacao():
             else:
                   print('Essa praga não está em nosso sistema')
       
+      #Milho
       elif nomePlanta == 'milho' or nomePlanta == 'Milho':
             if nomePraga == 'Percevejo-barriga-verde' or nomePraga == 'Percevejo-Barriga-Verde' or nomePraga == 'percevejo-barriga-verde' or nomePraga == 'Percevejo barriga verde' or nomePraga == 'Percevejo Barriga Verde' or nomePraga == 'percevejo-barriga-verde':
                   print(f'{engeoPlenoS}'
@@ -132,6 +141,7 @@ def Indicacao():
             else:
                   print('Essa praga não está em nosso sistema')
       
+      #Soja
       elif nomePlanta == 'soja' or nomePlanta == 'Soja':
             if nomePraga == 'Lagarta-do-cartucho' or nomePraga == 'Lagarta do cartucho' or nomePraga == 'lagarta-do-cartucho' or nomePraga == 'lagarta do cartucho' or nomePraga == 'Lagarta-do-Cartucho' or nomePraga == 'Lagarta do Cartucho':
                   print(f'{spodovir}')
@@ -154,6 +164,7 @@ def Indicacao():
             else:
                   print('Essa praga não está em nosso sistema')
             
+      #Trigo
       elif nomePlanta == 'trigo' or nomePlanta == 'Trigo':
             if nomePraga == 'Lagarta-do-cartucho' or nomePraga == 'Lagarta do cartucho' or nomePraga == 'lagarta-do-cartucho' or nomePraga == 'lagarta do cartucho' or nomePraga == 'Lagarta-do-Cartucho' or nomePraga == 'Lagarta do Cartucho':
                   print(f'{spodovir}')
@@ -175,7 +186,7 @@ while opcaoMenu != 9:
             '\n1. Desejo saber mais sobre a missão da PlanTech' #Luiz
             '\n2. Desejo saber sobre o funcionamento do drone' #Igor
             '\n3. Quero comprar um drone para detectar pragas' #Luiz
-            '\n4. Identifiquei uma praga na plantação. O que faço agora?' #Rafa
+            '\n4. Identifiquei uma praga na plantação. O que faço agora?'
             '\n5. Quem faz parte do projeto PlanTech?' #Douglas
             '\n6. Quero indicar um tratamento para uma praga' #Gustavo
             '\n7. Feedback' #Douglas
@@ -207,10 +218,7 @@ while opcaoMenu != 9:
       if opcaoMenu == 3:
             print("-")
 
-#Opção 4 do menu: identifiquei uma praga na plantação. O que faço agora? ---- Fazer um sistema com x tratamentos 
-#   para pragas e x tratamentos que x plantações pode receber. A partir disso, fazer todas as combinações possíveis 
-#   em comum. O usuário deve ter a opção de digitar o nome da praga e o nome da plantação atacada; Se colocar uma
-#   praga ou plantação que não tenha no sistema, dizer que ainda não há esse no sistema
+#Opção 4 do menu: Identifiquei uma praga na plantação. O que faço agora?
       if opcaoMenu == 4:
             print(Indicacao())
 
