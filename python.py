@@ -5,30 +5,6 @@ def Tratamentos():
       aug = '' 
 
 def Indicacao():
-      algodao = ''
-      arroz = ''
-      aveia = ''
-      cafe = ''
-      cana = ''
-      feijao = ''
-      girassol = ''
-      milho = ''
-      soja = ''
-      trigo = ''
-      cigarrinhaMilho = ''
-      cupimMonticulo = ''
-      lagartaCartucho = ''
-      lagartaHelicoverpa = ''
-      percevejoMarrom = ''
-      percevejoVerdePeq = ''
-      percevejoSoja = ''
-      percevejoArroz = ''
-      percevejoBarrigaVerde = ''
-      pulgao = ''
-      pulgaoAlgodoeiro = ''
-      tripes = ''
-      vaquinhaVerdeAmarela = ''
-
       nomePlanta = input('Qual o nome da plantação atacada? ')
       nomePraga = input('Qual o nome da praga? ')
 
