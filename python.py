@@ -28,23 +28,23 @@ def Indicacao():
                   print(f'\n{spodovir}')
                   return spodovir
             elif nomePraga == 'Percevejo-marrom' or nomePraga == 'percevejo-marrom' or nomePraga == 'Percevejo-Marrom' or nomePraga == 'Percevejo marrom' or nomePraga == 'percevejo marrom' or nomePraga == 'Percevejo Marrom':
-                  print(f'\n{engeoPlenoS}'
-                        '\nObservação: de 200 a 250 mL por hectare com no máximo 3 aplicações, uma a cada 7 dias; o volume da calda deve ser de 150 litros por hectare')
+                  print(f'\n{engeoPlenoS}')
+                  print('\nObservação: de 200 a 250 mL por hectare com no máximo 3 aplicações, uma a cada 7 dias; o volume da calda deve ser de 150 litros por hectare')
                   return engeoPlenoS
             elif nomePraga == 'Lagarta helicoverpa' or nomePraga == 'lagarta helicoverpa' or nomePraga == 'Lagarta Helicoverpa':
                   print(f'\n{bacillus}')
                   return bacillus
             elif nomePraga == 'Pulgão do algodoeiro' or nomePraga == 'Pulgao do algodoeiro' or nomePraga == 'pulgão do algodoeiro' or nomePraga == 'pulgao do algodoeiro' or nomePraga == 'Pulgão do Algodoeiro' or nomePraga == 'Pulgao do Algodoeiro':
-                  print(f'\n{aug}'
-                        '\nObservação: de 540 a 720 mL a cada 100kg com no máximo 1 aplicação; o volume da calda deve ser de 500mL a cada 100kg.')
+                  print(f'\n{aug}')
+                  print('\nObservação: de 540 a 720 mL a cada 100kg com no máximo 1 aplicação; o volume da calda deve ser de 500mL a cada 100kg.')
                   return aug
             elif nomePraga == 'Tripes' or nomePraga == 'tripes':
-                  print(f'{aug}'
-                        '\nObservação: de 540 a 720 mL a cada 100kg com no máximo 1 aplicação; o volume da calda deve ser de 500mL a cada 100kg.')
+                  print(f'{aug}')
+                  print('\nObservação: de 540 a 720 mL a cada 100kg com no máximo 1 aplicação; o volume da calda deve ser de 500mL a cada 100kg.')
                   return aug
             elif nomePraga == 'Cupim do montículo' or nomePraga == 'Cupim do monticulo' or nomePraga == 'cupim do montículo' or nomePraga == 'cupim do monticulo' or  nomePraga == 'Cupim do Montículo' or nomePraga == 'Cupim do Monticulo':       
-                  print(f'{aug}'
-                        '\nObservação: 720 mL a cada 100kg com no máximo 1 aplicação; o volume da calda deve ser de 500mL a cada 100kg.')
+                  print(f'{aug}')
+                  print('\nObservação: 720 mL a cada 100kg com no máximo 1 aplicação; o volume da calda deve ser de 500mL a cada 100kg.')
                   return aug
             else:
                   print('Essa praga não está em nosso sistema')
@@ -55,8 +55,8 @@ def Indicacao():
                   print (f'{spodovir}')
                   return spodovir
             elif nomePraga == 'Percevejo-do-arroz' or nomePraga == 'Percevejo do arroz' or nomePraga == 'percevejo-do-arroz' or nomePraga == 'percevejo do arroz' or nomePraga == 'Percevejo-do-Arroz' or nomePraga == 'Percevejo do Arroz':
-                  print (f'{engeoPlenoS}'
-                         '\nObservação: de 150 a 200 mL por hectare com no máximo 1 aplicação; o volume da calda deve ser de 200 litros por hectare')
+                  print (f'{engeoPlenoS}')
+                  print('\nObservação: de 150 a 200 mL por hectare com no máximo 1 aplicação; o volume da calda deve ser de 200 litros por hectare')
                   return engeoPlenoS
             else:
                   print('Essa praga não está em nosso sistema')
@@ -99,16 +99,16 @@ def Indicacao():
       #Girassol
       elif nomePlanta == 'girassol' or nomePlanta == 'Girassol':
             if nomePraga == 'Percevejo-verde-pequeno' or nomePraga == 'Percevejo-Verde-Pequeno' or nomePraga == 'percevejo-verde-pequeno' or nomePraga == 'Percevejo verde pequeno' or nomePraga == 'Percevejo verde pequeno' or nomePraga == 'percevejo verde pequeno':
-                  print(f'{engeoPlenoS}'
-                        '\nObservação: de 300 a 400 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 150 litros por hectare')
+                  print(f'{engeoPlenoS}')
+                  print('\nObservação: de 300 a 400 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 150 litros por hectare')
                   return engeoPlenoS
             elif nomePraga == 'Percevejo-da-soja' or nomePraga == 'percevejo-da-soja' or nomePraga == 'Percevejo-da-Soja' or nomePraga == 'Percevejo da soja' or nomePraga == 'percevejo da soja' or nomePraga == 'Percevejo da Soja':
-                  print(f'{engeoPlenoS}'
-                        '\nObservação: de 300 a 400 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 150 litros por hectare')
+                  print(f'{engeoPlenoS}')
+                  print('\nObservação: de 300 a 400 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 150 litros por hectare')
                   return engeoPlenoS
             elif nomePraga == 'Percevejo-marrom' or nomePraga == 'percevejo-marrom' or nomePraga == 'Percevejo-Marrom' or nomePraga == 'Percevejo marrom' or nomePraga == 'percevejo marrom' or nomePraga == 'Percevejo Marrom':
-                  print(f'{engeoPlenoS}'
-                        '\nObservação: de 300 a 400 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 150 litros por hectare')
+                  print(f'{engeoPlenoS}')
+                  print('\nObservação: de 300 a 400 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 150 litros por hectare')
                   return engeoPlenoS
             else:
                   print('Essa praga não está em nosso sistema')
@@ -116,27 +116,27 @@ def Indicacao():
       #Milho
       elif nomePlanta == 'milho' or nomePlanta == 'Milho':
             if nomePraga == 'Percevejo-barriga-verde' or nomePraga == 'Percevejo-Barriga-Verde' or nomePraga == 'percevejo-barriga-verde' or nomePraga == 'Percevejo barriga verde' or nomePraga == 'Percevejo Barriga Verde' or nomePraga == 'percevejo-barriga-verde':
-                  print(f'{engeoPlenoS}'
-                        '\nObservação: de 150 a 250 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 200 litros por hectare')
+                  print(f'{engeoPlenoS}')
+                  print('\nObservação: de 150 a 250 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 200 litros por hectare')
                   return engeoPlenoS
             elif nomePraga == 'Lagarta helicoverpa' or nomePraga == 'lagarta helicoverpa' or nomePraga == 'Lagarta Helicoverpa':
                   print (f'{bacillus}')
                   return bacillus
             elif nomePraga == 'Cigarrinha do milho' or nomePraga == 'cigarrinha do milho' or nomePraga == 'Cigarrinha do Milho':
-                  print (f'{aug}'
-                         '\nObservação: 960 mL para cada 100kg com apenas uma aplicação; o volume da calda deve ser 500 mL para cada 100kg')
+                  print (f'{aug}')
+                  print('\nObservação: 960 mL para cada 100kg com apenas uma aplicação; o volume da calda deve ser 500 mL para cada 100kg')
                   return aug
             elif nomePraga == 'Vaquinha verde amarela' or nomePraga == 'vaquinha verde amarela' or nomePraga == 'Vaquinha Verde Amarela':
-                  print(f'{aug}'
-                        '\nObservação: 960 mL para cada 100kg com apenas uma aplicação; o volume da calda deve ser 500 mL para cada 100kg')
+                  print(f'{aug}')
+                  print('\nObservação: 960 mL para cada 100kg com apenas uma aplicação; o volume da calda deve ser 500 mL para cada 100kg')
                   return aug
             elif nomePraga == 'Cupim' or nomePraga == 'cupim':
-                  print(f'{aug}'
-                        '\nObservação: 300 mL para cada 100kg com apenas uma aplicação; o volume da calda deve ser 500 mL para cada 100kg')
+                  print(f'{aug}')
+                  print('\nObservação: 300 mL para cada 100kg com apenas uma aplicação; o volume da calda deve ser 500 mL para cada 100kg')
                   return aug
             elif nomePraga == 'Pulgão' or nomePraga == 'Pulgao' or nomePraga == 'pulgão' or nomePraga == 'pulgao':
-                  print(f'{aug}'
-                        '\nObservação: 480 mL para cada 100kg com apenas uma aplicação; o volume da calda deve ser 500 mL para cada 100kg')
+                  print(f'{aug}')
+                  print('\nObservação: 480 mL para cada 100kg com apenas uma aplicação; o volume da calda deve ser 500 mL para cada 100kg')
                   return aug
             else:
                   print('Essa praga não está em nosso sistema')
@@ -147,16 +147,16 @@ def Indicacao():
                   print(f'{spodovir}')
                   return spodovir
             elif nomePraga == 'Percevejo-marrom' or nomePraga == 'percevejo-marrom' or nomePraga == 'Percevejo-Marrom' or nomePraga == 'Percevejo marrom' or nomePraga == 'percevejo marrom' or nomePraga == 'Percevejo Marrom':
-                  print(f'{engeoPlenoS}'
-                        '\nObservação: 200 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 200 litros por hectare.')
+                  print(f'{engeoPlenoS}')
+                  print('\nObservação: 200 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 200 litros por hectare.')
                   return engeoPlenoS
             elif nomePraga == 'Percevejo-verde-pequeno' or nomePraga == 'Percevejo-Verde-Pequeno' or nomePraga == 'percevejo-verde-pequeno' or nomePraga == 'Percevejo verde pequeno' or nomePraga == 'Percevejo verde pequeno' or nomePraga == 'percevejo verde pequeno':
-                  print(f'{engeoPlenoS}'
-                        '\nObservação: de 150 a 180 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 200 litros por hectare')
+                  print(f'{engeoPlenoS}')
+                  print('\nObservação: de 150 a 180 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 200 litros por hectare')
                   return engeoPlenoS
             elif nomePraga == 'Percevejo-da-soja' or nomePraga == 'percevejo-da-soja' or nomePraga == 'Percevejo-da-Soja' or nomePraga == 'Percevejo da soja' or nomePraga == 'percevejo da soja' or nomePraga == 'Percevejo da Soja':
-                  print(f'{engeoPlenoS}'
-                        '\nObservação: de 150 a 180 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 200 litros por hectare')
+                  print(f'{engeoPlenoS}')
+                  print('\nObservação: de 150 a 180 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 200 litros por hectare')
                   return engeoPlenoS
             elif nomePraga == 'Lagarta helicoverpa' or nomePraga == 'lagarta helicoverpa' or nomePraga == 'Lagarta Helicoverpa':
                   print (f'{bacillus}')
@@ -170,8 +170,8 @@ def Indicacao():
                   print(f'{spodovir}')
                   return spodovir
             elif nomePraga == 'Percevejo-barriga-verde' or nomePraga == 'Percevejo-Barriga-Verde' or nomePraga == 'percevejo-barriga-verde' or nomePraga == 'Percevejo barriga verde' or nomePraga == 'Percevejo Barriga Verde' or nomePraga == 'percevejo-barriga-verde':
-                  print(f'{engeoPlenoS}'
-                        '\nObservação: 150 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 200 litros por hectare')
+                  print(f'{engeoPlenoS}')
+                  print('\nObservação: 150 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 200 litros por hectare')
                   return engeoPlenoS
             else:
                   print('Essa praga não está em nosso sistema')
@@ -187,9 +187,9 @@ while opcaoMenu != 9:
             '\n2. Desejo saber sobre o funcionamento do drone' #Igor
             '\n3. Quero comprar um drone para detectar pragas' #Luiz
             '\n4. Identifiquei uma praga na plantação. O que faço agora?'
-            '\n5. Quem faz parte do projeto PlanTech?' #Douglas
+            '\n5. Quem faz parte do projeto PlanTech?'
             '\n6. Quero indicar um tratamento para uma praga' #Gustavo
-            '\n7. Feedback' #Douglas
+            '\n7. Feedback'
             '\n8. Outro'
             '\n9. Encerrar')
       opcaoMenu = int(input('Selecione uma das opções acima: '))
@@ -222,9 +222,11 @@ while opcaoMenu != 9:
       if opcaoMenu == 4:
             print(Indicacao())
 
+
 #Opção 5 do menu: quem faz parte do projeto PlanTech? ---- Colocar o nome e RM de todos do grupo
       if opcaoMenu == 5:
-            print("\nTodas as pessoas responsáveis pelo projeto PlanTech são: \nDouglas Magalhães de Araujo - rm552008 \nGustavo Arguello Bertacci - rm551304 \nIgor Ribeiro Anccilotto - rm550415 \nLuiz Fillipe Farias - rm99519 \nRafaella Monique do Carmo Bastos - rm552425")
+            print('\nTodas as pessoas responsáveis pelo projeto PlanTech são: \nDouglas Magalhães de Araujo - rm552008 \nGustavo Arguello Bertacci - rm551304 \nIgor Ribeiro Anccilotto - rm550415 \nLuiz Fillipe Farias - rm99519 \nRafaella Monique do Carmo Bastos - rm552425')
+
 
 #Opção 6 do menu: quero indicar o tratamento para uma praga ---- Deixar com que o usuário informe o nome de uma 
 #   praga, o tipo de plantação que essa praga ataca e o tipo de tratamento que essa praga combinada com essa 
@@ -238,49 +240,49 @@ while opcaoMenu != 9:
 #   o site
       if opcaoMenu == 7:
             #menu que pergunta para o usuário a escolha do feedback.
-            feedback = int(input("\nPrimeiro, informe o tipo do feedback: \n(1) - Resolução de suas dúvidas \n(2) - Performace do sistema \n(3) - Indicação dos tratamentos para as plantações \n(4) - Usabilidade do projeto \n(5) - Experiência com o site"))
+            feedback = int(input('\nPrimeiro, informe o tipo do feedback: \n(1) - Resolução de suas dúvidas \n(2) - Performace do sistema \n(3) - Indicação dos tratamentos para as plantações \n(4) - Usabilidade do projeto \n(5) - Experiência com o site'))
             #se o usuário digitar um número maior ou menor, aparece uma mensagem de erro.
             if feedback < 1 or feedback > 5:
-                  print("Escolha incorreta! Escolha um número de 1 a 5.")
-            
+                  print('Escolha incorreta! Escolha um número de 1 a 5.')
+
             #O usuário digita a nota do feedback de 0 até 10, e depois escreve uma observação.
             elif feedback == 1:
-                  notaFeedback = int(input("Digite a nota que desejar (0-10): "))
+                  notaFeedback = int(input('Digite a nota que desejar (0-10): '))
                   
                   #Se o usuário digitar um número maior ou menor, aparece uma mensagem de erro.
                   if notaFeedback < 0 or notaFeedback > 10:
-                        print("Os números permitidos são apenas de 0 a 10!")
+                        print('Os números permitidos são apenas de 0 a 10!')
                   else:
-                        reclamacao = input("Escreva sua reclamação ou aperte ENTER para enviar: ")
-                        print(f"A PlanTech agradece pelo seu feedback!")
+                        reclamacao = input('Escreva sua reclamação ou aperte ENTER para enviar: ')
+                        print(f'\nA PlanTech agradece pelo seu feedback!')
             elif feedback == 2:
-                  notaFeedback = int(input("Digite a nota que desejar (0-10): "))
+                  notaFeedback = int(input('Digite a nota que desejar (0-10): '))
                   if notaFeedback < 0 or notaFeedback > 10:
-                        print("Os números permitidos são apenas de 0 a 10!")
+                        print('Os números permitidos são apenas de 0 a 10!')
                   else:
-                        reclamacao = input("Escreva sua reclamação ou aperte ENTER para enviar:")
-                        print(f"A PlanTech agradece pelo seu feedback!")
+                        reclamacao = input('Escreva sua reclamação ou aperte ENTER para enviar: ')
+                        print(f'\nA PlanTech agradece pelo seu feedback!')
             elif feedback == 3:
-                  notaFeedback = int(input("Digite a nota que desejar (0-10): "))
+                  notaFeedback = int(input('Digite a nota que desejar (0-10): '))
                   if notaFeedback < 0 or notaFeedback > 10:
-                        print("Os números permitidos são apenas de 0 a 10!")
+                        print('Os números permitidos são apenas de 0 a 10!')
                   else:
-                        reclamacao = input("Escreva sua reclamação ou aperte ENTER para enviar: ")
-                        print(f"A PlanTech agradece pelo seu feedback!")
+                        reclamacao = input('Escreva sua reclamação ou aperte ENTER para enviar: ')
+                        print(f'\nA PlanTech agradece pelo seu feedback!')
             elif feedback == 4:
-                  notaFeedback = int(input("Digite a nota que desejar (0-10): "))
+                  notaFeedback = int(input('Digite a nota que desejar (0-10): '))
                   if notaFeedback < 0 or notaFeedback > 10:
-                        print("Os números permitidos são apenas de 0 a 10!")
+                        print('Os números permitidos são apenas de 0 a 10!')
                   else:
-                        reclamacao = input("Escreva sua reclamação ou aperte ENTER para enviar: ")
-                        print(f"A PlanTech agradece pelo seu feedback!")
+                        reclamacao = input('Escreva sua reclamação ou aperte ENTER para enviar: ')
+                        print(f'\nA PlanTech agradece pelo seu feedback!')
             elif feedback == 5:
-                  notaFeedback = int(input("Digite a nota que desejar (0-10): "))
+                  notaFeedback = int(input('Digite a nota que desejar (0-10): '))
                   if notaFeedback < 0 or notaFeedback > 10:
-                        print("Os números permitidos são apenas de 0 a 10!")
+                        print('Os números permitidos são apenas de 0 a 10!')
                   else:
-                        reclamacao = input("Escreva sua reclamação ou aperte ENTER para enviar: ")
-                        print(f"A PlanTech agradece pelo seu feedback!")
+                        reclamacao = input('Escreva sua reclamação ou aperte ENTER para enviar: ')
+                        print(f'\nA PlanTech agradece pelo seu feedback!')
 
 #Opção 8 do menu: outro
       if opcaoMenu == 8:
