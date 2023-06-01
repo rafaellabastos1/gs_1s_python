@@ -244,7 +244,9 @@ while opcaoMenu != 9:
 #   IA's generativas na produção, distribuição de alimentos pelo mundo, modelos de cultivos eficientes e calendário
 #   de controle de pragas, entrar no site da PlanTech.
       if opcaoMenu == 8:
-            print("-")
+            print('\nVeja só:')
+            print('1. Se quiser retirar suas dúvidas mais específicas, entre no nosso ChatBot que ele te auxiliará')
+            print('2. Se quer textos mais explicativos como agricultura sustentável, uso de IAs generativas na produção, distribuição de alimentos pelo mundo, modelos de cultivos eficientes, calendário de controle de pragas ou outros textos, entre no site da PlanTech')
 
 #Opção 9 do menu: encerramento
       if opcaoMenu == 9:
