@@ -282,9 +282,6 @@ while opcaoMenu != 9:
                         reclamacao = input("Escreva sua reclamação ou aperte ENTER para enviar: ")
                         print(f"A PlanTech agradece pelo seu feedback!")
 
-      if opcaoMenu == 7:
-            print("-")
-
 #Opção 8 do menu: outro
       if opcaoMenu == 8:
             print('\nVeja só:')
