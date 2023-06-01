@@ -223,11 +223,8 @@ while opcaoMenu != 9:
             print(Indicacao())
 
 #Opção 5 do menu: quem faz parte do projeto PlanTech? ---- Colocar o nome e RM de todos do grupo
-      case 5:
-            print("\nTodas as pessoas responsáveis pelo projeto PlanTech são: \nDouglas Magalhães de Araujo - rm552008 \nGustavo Arguello Bertacci - rm551304 \nIgor Ribeiro Anccilotto - rm550415 \nLuiz Fillipe Farias - rm99519 \nRafaella Monique do Carmo Bastos - rm552425")
-
       if opcaoMenu == 5:
-            print("-")
+            print("\nTodas as pessoas responsáveis pelo projeto PlanTech são: \nDouglas Magalhães de Araujo - rm552008 \nGustavo Arguello Bertacci - rm551304 \nIgor Ribeiro Anccilotto - rm550415 \nLuiz Fillipe Farias - rm99519 \nRafaella Monique do Carmo Bastos - rm552425")
 
 #Opção 6 do menu: quero indicar o tratamento para uma praga ---- Deixar com que o usuário informe o nome de uma 
 #   praga, o tipo de plantação que essa praga ataca e o tipo de tratamento que essa praga combinada com essa 
@@ -239,48 +236,50 @@ while opcaoMenu != 9:
 #Opção 7 do menu: feedback ---- o usuário pode dar um feedback sobre a resolução de suas dúvidas, da performace do
 #   sistema, sobre a indicação dos tratamentos para as plantações, sobre a usabilidade do projeto e experiência com 
 #   o site
-      case 7:
+      if opcaoMenu == 7:
             #menu que pergunta para o usuário a escolha do feedback.
             feedback = int(input("\nPrimeiro, informe o tipo do feedback: \n(1) - Resolução de suas dúvidas \n(2) - Performace do sistema \n(3) - Indicação dos tratamentos para as plantações \n(4) - Usabilidade do projeto \n(5) - Experiência com o site"))
             #se o usuário digitar um número maior ou menor, aparece uma mensagem de erro.
             if feedback < 1 or feedback > 5:
                   print("Escolha incorreta! Escolha um número de 1 a 5.")
-            #o usuário digita a nota do feedback de 0 até 10, e depois escreve uma observação.
+            
+            #O usuário digita a nota do feedback de 0 até 10, e depois escreve uma observação.
             elif feedback == 1:
-                  notaFeedback = int(input("Digite a nota que desejar (0-10)"))
-                  #se o usuário digitar um número maior ou menor, aparece uma mensagem de erro.
+                  notaFeedback = int(input("Digite a nota que desejar (0-10): "))
+                  
+                  #Se o usuário digitar um número maior ou menor, aparece uma mensagem de erro.
                   if notaFeedback < 0 or notaFeedback > 10:
                         print("Os números permitidos são apenas de 0 a 10!")
                   else:
-                        reclamacao = input("Escreva sua reclamação, ou, aperte ENTER para enviar")
+                        reclamacao = input("Escreva sua reclamação ou aperte ENTER para enviar: ")
                         print(f"A PlanTech agradece pelo seu feedback!")
             elif feedback == 2:
-                  notaFeedback = int(input("Digite a nota que desejar (0-10)"))
+                  notaFeedback = int(input("Digite a nota que desejar (0-10): "))
                   if notaFeedback < 0 or notaFeedback > 10:
                         print("Os números permitidos são apenas de 0 a 10!")
                   else:
-                        reclamacao = input("Escreva sua reclamação, ou, aperte ENTER para enviar")
+                        reclamacao = input("Escreva sua reclamação ou aperte ENTER para enviar:")
                         print(f"A PlanTech agradece pelo seu feedback!")
             elif feedback == 3:
-                  notaFeedback = int(input("Digite a nota que desejar (0-10)"))
+                  notaFeedback = int(input("Digite a nota que desejar (0-10): "))
                   if notaFeedback < 0 or notaFeedback > 10:
                         print("Os números permitidos são apenas de 0 a 10!")
                   else:
-                        reclamacao = input("Escreva sua reclamação, ou, aperte ENTER para enviar")
+                        reclamacao = input("Escreva sua reclamação ou aperte ENTER para enviar: ")
                         print(f"A PlanTech agradece pelo seu feedback!")
             elif feedback == 4:
-                  notaFeedback = int(input("Digite a nota que desejar (0-10)"))
+                  notaFeedback = int(input("Digite a nota que desejar (0-10): "))
                   if notaFeedback < 0 or notaFeedback > 10:
                         print("Os números permitidos são apenas de 0 a 10!")
                   else:
-                        reclamacao = input("Escreva sua reclamação, ou, aperte ENTER para enviar")
+                        reclamacao = input("Escreva sua reclamação ou aperte ENTER para enviar: ")
                         print(f"A PlanTech agradece pelo seu feedback!")
             elif feedback == 5:
-                  notaFeedback = int(input("Digite a nota que desejar (0-10)"))
+                  notaFeedback = int(input("Digite a nota que desejar (0-10): "))
                   if notaFeedback < 0 or notaFeedback > 10:
                         print("Os números permitidos são apenas de 0 a 10!")
                   else:
-                        reclamacao = input("Escreva sua reclamação, ou, aperte ENTER para enviar")
+                        reclamacao = input("Escreva sua reclamação ou aperte ENTER para enviar: ")
                         print(f"A PlanTech agradece pelo seu feedback!")
 
       if opcaoMenu == 7:
