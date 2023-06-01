@@ -27,33 +27,23 @@ def Indicacao():
 
       #Algodão
       if nomePlanta == 'ALGODÃO' or nomePlanta == 'ALGODAO':
-            if nomePraga == 'LAGARTA-DO-CARTUCHO' or 'LAGARTA DO CARTUCHO':
-                  print(f'\n{spodovir}')
+            if nomePraga == 'LAGARTA-DO-CARTUCHO' or nomePraga == 'LAGARTA DO CARTUCHO':
                   return spodovir
-            
+      
             elif nomePraga == 'PERCEVEJO-MARROM' or nomePraga == 'PERCEVEJO MARROM':
-                  print(f'\n{engeoPlenoS}')
-                  print('\nObservação: de 200 a 250 mL por hectare com no máximo 3 aplicações, uma a cada 7 dias; o volume da calda deve ser de 150 litros por hectare')
-                  return engeoPlenoS
+                  return f'{engeoPlenoS}\nObservação: de 200 a 250 mL por hectare com no máximo 3 aplicações, uma a cada 7 dias; o volume da calda deve ser de 150 litros por hectare'
             
             elif nomePraga == 'LAGARTA HELICOVERPA':
-                  print(f'\n{bacillus}')
                   return bacillus
             
-            elif nomePraga == 'PULGÃO DE ALGODOEIRO' or nomePraga == 'PULGAO DE ALGODOEIRO':
-                  print(f'\n{aug}')
-                  print('\nObservação: de 540 a 720 mL a cada 100kg com no máximo 1 aplicação; o volume da calda deve ser de 500mL a cada 100kg.')
-                  return aug
+            elif nomePraga == 'PULGÃO DO ALGODOEIRO' or nomePraga == 'PULGAO DO ALGODOEIRO':
+                  return f'{aug}\nObservação: de 540 a 720 mL a cada 100kg com no máximo 1 aplicação; o volume da calda deve ser de 500mL a cada 100kg.'
             
             elif nomePraga == 'TRIPES':
-                  print(f'{aug}')
-                  print('\nObservação: de 540 a 720 mL a cada 100kg com no máximo 1 aplicação; o volume da calda deve ser de 500mL a cada 100kg.')
-                  return aug
+                  return f'{aug}\nObservação: de 540 a 720 mL a cada 100kg com no máximo 1 aplicação; o volume da calda deve ser de 500mL a cada 100kg.'
             
-            elif nomePraga == 'CUPIM DO MONTÍCULO' or nomePraga == 'CUPIM DO MONTICULO':       
-                  print(f'{aug}')
-                  print('\nObservação: 720 mL a cada 100kg com no máximo 1 aplicação; o volume da calda deve ser de 500mL a cada 100kg.')
-                  return aug
+            elif nomePraga == 'CUPIM DE MONTÍCULO' or nomePraga == 'CUPIM DE MONTICULO':       
+                  return f'{aug}\nObservação: 720 mL a cada 100kg com no máximo 1 aplicação; o volume da calda deve ser de 500mL a cada 100kg.'
             else:
                   print('Essa praga não está em nosso sistema')
       
@@ -61,13 +51,10 @@ def Indicacao():
       #Arroz
       elif nomePlanta == 'ARROZ':
             if nomePraga == 'LAGARTA-DO-CARTUCHO' or nomePraga == 'LAGARTA DO CARTUCHO':
-                  print (f'{spodovir}')
                   return spodovir
             
             elif nomePraga == 'PERCEVEJO-DO-ARROZ' or nomePraga == 'PERCEVEJO DO ARROZ':
-                  print (f'{engeoPlenoS}')
-                  print('\nObservação: de 150 a 200 mL por hectare com no máximo 1 aplicação; o volume da calda deve ser de 200 litros por hectare')
-                  return engeoPlenoS
+                  return f'{engeoPlenoS}\nObservação: de 150 a 200 mL por hectare com no máximo 1 aplicação; o volume da calda deve ser de 200 litros por hectare'
             else:
                   print('Essa praga não está em nosso sistema')
       
@@ -75,7 +62,6 @@ def Indicacao():
       #Aveia
       elif nomePlanta == 'AVEIA':
             if nomePraga == 'LAGARTA-DO-CARTUCHO' or nomePraga == 'LAGARTA DO CARTUCHO':
-                  print (f'{spodovir}')
                   return spodovir
             else:
                   print('Essa praga não está em nosso sistema')
@@ -84,7 +70,6 @@ def Indicacao():
       #Café
       elif nomePlanta == 'CAFÉ' or nomePlanta == 'CAFE':
             if nomePraga == 'LAGARTA HELICOVERPA':
-                  print (f'{bacillus}')
                   return bacillus
             else:
                   print('Essa praga não está em nosso sistema')
@@ -93,7 +78,6 @@ def Indicacao():
       #Cana-de-açúcar
       elif nomePlanta == 'CANA-DE-AÇÚCAR' or 'CANA-DE-AÇUCAR' or 'CANA-DE-ACUCAR' or 'CANA DE AÇÚCAR' or 'CANA DE AÇUCAR' or 'CANA DE AÇUCAR' or 'CANA DE ACUCAR':
             if nomePraga == 'LAGARTA-DO-CARTUCHO' or nomePraga == 'LAGARTA DO CARTUCHO':
-                  print(f'{spodovir}')
                   return spodovir
             else:
                   print('Essa praga não está em nosso sistema')
@@ -102,11 +86,8 @@ def Indicacao():
       #Feijão
       elif nomePlanta == 'FEIJAO' or nomePlanta == 'FEIJÃO':
             if nomePraga == 'LAGARTA-DO-CARTUCHO' or nomePraga == 'LAGARTA DO CARTUCHO':
-                  print(f'{spodovir}')
                   return spodovir
-            
             elif nomePraga == 'LAGARTA HELICOVERPA':
-                  print (f'{bacillus}')
                   return bacillus
             else:
                   print('Essa praga não está em nosso sistema')
@@ -115,19 +96,13 @@ def Indicacao():
       #Girassol
       elif nomePlanta == 'GIRASSOL':
             if nomePraga == 'PERCEVEJO-VERDE-PEQUENO' or nomePraga == 'PERCEVEJO VERDE PEQUENO':
-                  print(f'{engeoPlenoS}')
-                  print('\nObservação: de 300 a 400 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 150 litros por hectare')
-                  return engeoPlenoS
+                  return f'{engeoPlenoS}\nObservação: de 300 a 400 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 150 litros por hectare'
             
             elif nomePraga == 'PERCEVEJO-DA-SOJA' or nomePraga == 'PERCEVEJO DA SOJA':
-                  print(f'{engeoPlenoS}')
-                  print('\nObservação: de 300 a 400 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 150 litros por hectare')
-                  return engeoPlenoS
+                  return f'{engeoPlenoS}\nObservação: de 300 a 400 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 150 litros por hectare'
             
             elif nomePraga == 'PERCEVEJO-MARROM' or nomePraga == 'PERCEVEJO MARROM':
-                  print(f'{engeoPlenoS}')
-                  print('\nObservação: de 300 a 400 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 150 litros por hectare')
-                  return engeoPlenoS
+                  return f'{engeoPlenoS}\nObservação: de 300 a 400 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 150 litros por hectare'
             else:
                   print('Essa praga não está em nosso sistema')
       
@@ -135,33 +110,22 @@ def Indicacao():
       #Milho
       elif nomePlanta == 'MILHO':
             if nomePraga == 'PERCEVEJO-BARRIGA-VERDE' or nomePraga == 'PERCEVEJO BARRIGA VERDE':
-                  print(f'{engeoPlenoS}')
-                  print('\nObservação: de 150 a 250 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 200 litros por hectare')
-                  return engeoPlenoS
+                  return f'{engeoPlenoS}\nObservação: de 150 a 250 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 200 litros por hectare'
             
             elif nomePraga == 'LAGARTA HELICOVERPA':
-                  print (f'{bacillus}')
                   return bacillus
             
             elif nomePraga == 'CIGARRINHA DO MILHO':
-                  print (f'{aug}')
-                  print('\nObservação: 960 mL para cada 100kg com apenas uma aplicação; o volume da calda deve ser 500 mL para cada 100kg')
-                  return aug
+                  return f'{aug}\nObservação: 960 mL para cada 100kg com apenas uma aplicação; o volume da calda deve ser 500 mL para cada 100kg'
             
             elif nomePraga == 'VAQUINHA VERDE AMARELA':
-                  print(f'{aug}')
-                  print('\nObservação: 960 mL para cada 100kg com apenas uma aplicação; o volume da calda deve ser 500 mL para cada 100kg')
-                  return aug
+                  return f'{aug}\nObservação: 960 mL para cada 100kg com apenas uma aplicação; o volume da calda deve ser 500 mL para cada 100kg'
             
             elif nomePraga == 'CUPIM':
-                  print(f'{aug}')
-                  print('\nObservação: 300 mL para cada 100kg com apenas uma aplicação; o volume da calda deve ser 500 mL para cada 100kg')
-                  return aug
+                  return f'{aug}\nObservação: 300 mL para cada 100kg com apenas uma aplicação; o volume da calda deve ser 500 mL para cada 100kg'
             
             elif nomePraga == 'PULGÃO' or nomePraga == 'PULGAO':
-                  print(f'{aug}')
-                  print('\nObservação: 480 mL para cada 100kg com apenas uma aplicação; o volume da calda deve ser 500 mL para cada 100kg')
-                  return aug
+                  return f'{aug}\nObservação: 480 mL para cada 100kg com apenas uma aplicação; o volume da calda deve ser 500 mL para cada 100kg'
             else:
                   print('Essa praga não está em nosso sistema')
       
@@ -169,26 +133,18 @@ def Indicacao():
       #Soja
       elif nomePlanta == 'SOJA':
             if nomePraga == 'LAGARTA-DO-CARTUCHO' or nomePraga == 'LAGARTA DO CARTUCHO':
-                  print(f'{spodovir}')
                   return spodovir
             
             elif nomePraga == 'PERCEVEJO-MARROM' or nomePraga == 'PERCEVEJO MARROM':
-                  print(f'{engeoPlenoS}')
-                  print('\nObservação: 200 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 200 litros por hectare.')
-                  return engeoPlenoS
+                  return f'{aug}\nObservação: 200 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 200 litros por hectare.'
             
             elif nomePraga == 'PERCEVEJO-VERDE-PEQUENO' or nomePraga == 'PERCEVEJO VERDE PEQUENO':
-                  print(f'{engeoPlenoS}')
-                  print('\nObservação: de 150 a 180 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 200 litros por hectare')
-                  return engeoPlenoS
+                  return f'{aug}\nObservação: de 150 a 180 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 200 litros por hectare'
             
             elif nomePraga == 'PERCEVEJO-DA-SOJA' or nomePraga == 'PERCEVEJO DA SOJA':
-                  print(f'{engeoPlenoS}')
-                  print('\nObservação: de 150 a 180 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 200 litros por hectare')
-                  return engeoPlenoS
+                  return f'{aug}\nObservação: de 150 a 180 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 200 litros por hectare'
             
             elif nomePraga == 'LAGARTA HELICOVERPA':
-                  print (f'{bacillus}')
                   return bacillus
             else:
                   print('Essa praga não está em nosso sistema')
@@ -196,14 +152,12 @@ def Indicacao():
 
       #Trigo
       elif nomePlanta == 'TRIGO':
+            nomePraga = nomePraga.upper()
             if nomePraga == 'LAGARTA-DO-CARTUCHO' or nomePraga == 'LAGARTA DO CARTUCHO':
-                  print(f'{spodovir}')
                   return spodovir
             
             elif nomePraga == 'PERCEVEJO-BARRIGA-VERDE' or nomePraga == 'PERCEVEJO BARRIGA VERDE':
-                  print(f'{engeoPlenoS}')
-                  print('\nObservação: 150 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 200 litros por hectare')
-                  return engeoPlenoS
+                  return f'{engeoPlenoS}\nObservação: 150 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 200 litros por hectare'
             else:
                   print('Essa praga não está em nosso sistema')
       else:
