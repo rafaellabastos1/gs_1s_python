@@ -49,7 +49,7 @@ def Indicacao():
       elif nomePlanta == 'arroz' or 'Arroz':
             if nomePraga == 'Lagarta-do-cartucho' or 'Lagarta do cartucho' or 'lagarta-do-cartucho' or 'lagarta do cartucho' or 'Lagarta-do-Cartucho' or 'Lagarta do Cartucho':
                   print ('Faça o tratamento g')
-            if nomePraga == 'Percevejo-do-arroz' or 'Percevejo do arroz' or 'percevejo-do-arroz' or 'percevejo do arroz' or 'Percevejo-do-Arroz' or 'Percevejo do Arroz':
+            elif nomePraga == 'Percevejo-do-arroz' or 'Percevejo do arroz' or 'percevejo-do-arroz' or 'percevejo do arroz' or 'Percevejo-do-Arroz' or 'Percevejo do Arroz':
                   print ('Faça o tratamento h')
       
       elif nomePlanta == 'aveia' or 'Aveia':
@@ -107,7 +107,7 @@ def Indicacao():
       elif nomePlanta == 'trigo' or 'Trigo':
             if nomePraga == 'Lagarta-do-cartucho' or 'Lagarta do cartucho' or 'lagarta-do-cartucho' or 'lagarta do cartucho' or 'Lagarta-do-Cartucho' or 'Lagarta do Cartucho':
                   print('Faça o tratamento bb')
-            if nomePraga == 'Percevejo-barriga-verde' or 'Percevejo-Barriga-Verde' or 'percevejo-barriga-verde' or 'Percevejo barriga verde' or 'Percevejo Barriga Verde' or 'percevejo-barriga-verde':
+            elif nomePraga == 'Percevejo-barriga-verde' or 'Percevejo-Barriga-Verde' or 'percevejo-barriga-verde' or 'Percevejo barriga verde' or 'Percevejo Barriga Verde' or 'percevejo-barriga-verde':
                   print('Faça o tratamento cc')
 
 
