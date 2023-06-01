@@ -33,83 +33,82 @@ def Indicacao():
       nomePraga = input('Qual o nome da praga? ')
 
       if nomePlanta == 'algodão' or 'algodao' or 'Algodão' or 'Algodao':
-            if nomePraga == 'Lagarta-do-cartucho' or 'lagarta-do-cartucho' or 'Lagarta-do-Cartucho' or 'Lagarta do cartucho' or 'lagarta do cartucho' or 'Lagarta do Cartucho':
+            if nomePraga == 'Lagarta-do-cartucho' or nomePraga == 'lagarta-do-cartucho' or nomePraga == 'Lagarta-do-Cartucho' or nomePraga == 'Lagarta do cartucho' or nomePraga == 'lagarta do cartucho' or nomePraga == 'Lagarta do Cartucho':
                   print('Faça o tratamento a')
-            elif nomePraga == 'Percevejo-marrom' or 'percevejo-marrom' or 'Percevejo-Marrom' or 'Percevejo marrom' or 'percevejo marrom' or 'Percevejo Marrom':
+            elif nomePraga == 'Percevejo-marrom' or nomePraga == 'percevejo-marrom' or nomePraga == 'Percevejo-Marrom' or nomePraga == 'Percevejo marrom' or nomePraga == 'percevejo marrom' or nomePraga == 'Percevejo Marrom':
                   print('Faça o tratamento b')
-            elif nomePraga == 'Lagarta helicoverpa' or 'lagarta helicoverpa' or 'Lagarta Helicoverpa':
+            elif nomePraga == 'Lagarta helicoverpa' or nomePraga == 'lagarta helicoverpa' or nomePraga == 'Lagarta Helicoverpa':
                   print('Faça o tratamento c')
-            elif nomePraga == 'Pulgão do algodoeiro' or 'Pulgao do algodoeiro' or 'pulgão do algodoeiro' or 'pulgao do algodoeiro' or 'Pulgão do Algodoeiro' or 'Pulgao do Algodoeiro':
+            elif nomePraga == 'Pulgão do algodoeiro' or nomePraga == 'Pulgao do algodoeiro' or nomePraga == 'pulgão do algodoeiro' or nomePraga == 'pulgao do algodoeiro' or nomePraga == 'Pulgão do Algodoeiro' or nomePraga == 'Pulgao do Algodoeiro':
                   print('Faça o tratamento d')
-            elif nomePraga == 'Tripes' or 'tripes':
+            elif nomePraga == 'Tripes' or nomePraga == 'tripes':
                   print('Faça o tratamento e')
-            elif nomePraga == 'Cupim do montículo' or 'Cupim do monticulo' or 'cupim do montículo' or 'cupim do monticulo' or 'Cupim do Montículo' or 'Cupim do Monticulo':       
+            elif nomePraga == 'Cupim do montículo' or nomePraga == 'Cupim do monticulo' or nomePraga == 'cupim do montículo' or nomePraga == 'cupim do monticulo' or  nomePraga == 'Cupim do Montículo' or nomePraga == 'Cupim do Monticulo':       
                   print('Faça o tratamento f')
       
       elif nomePlanta == 'arroz' or 'Arroz':
-            if nomePraga == 'Lagarta-do-cartucho' or 'Lagarta do cartucho' or 'lagarta-do-cartucho' or 'lagarta do cartucho' or 'Lagarta-do-Cartucho' or 'Lagarta do Cartucho':
+            if nomePraga == 'Lagarta-do-cartucho' or nomePraga == 'Lagarta do cartucho' or nomePraga == 'lagarta-do-cartucho' or nomePraga == 'lagarta do cartucho' or nomePraga == 'Lagarta-do-Cartucho' or nomePraga == 'Lagarta do Cartucho':
                   print ('Faça o tratamento g')
-            elif nomePraga == 'Percevejo-do-arroz' or 'Percevejo do arroz' or 'percevejo-do-arroz' or 'percevejo do arroz' or 'Percevejo-do-Arroz' or 'Percevejo do Arroz':
+            elif nomePraga == 'Percevejo-do-arroz' or nomePraga == 'Percevejo do arroz' or nomePraga == 'percevejo-do-arroz' or nomePraga == 'percevejo do arroz' or nomePraga == 'Percevejo-do-Arroz' or nomePraga == 'Percevejo do Arroz':
                   print ('Faça o tratamento h')
       
       elif nomePlanta == 'aveia' or 'Aveia':
-            if nomePraga == 'Lagarta-do-cartucho' or 'Lagarta do cartucho' or 'lagarta-do-cartucho' or 'lagarta do cartucho' or 'Lagarta-do-Cartucho' or 'Lagarta do Cartucho':
+            if nomePraga == 'Lagarta-do-cartucho' or nomePraga == 'Lagarta do cartucho' or nomePraga == 'lagarta-do-cartucho' or nomePraga == 'lagarta do cartucho' or nomePraga == 'Lagarta-do-Cartucho' or nomePraga == 'Lagarta do Cartucho':
                   print ('Faça o tratamento i')
       
-      elif nomePlanta == 'cafe' or 'café' or 'Cafe' or 'Café':
-            if nomePraga == 'Lagarta helicoverpa' or 'lagarta helicoverpa' or 'Lagarta Helicoverpa':
+      elif nomePlanta == 'cafe' or  'café' or 'Cafe' or 'Café':
+            if nomePraga == 'Lagarta helicoverpa' or nomePraga == 'lagarta helicoverpa' or nomePraga == 'Lagarta Helicoverpa':
                   print ('Faça o tratamento j')
 
       elif nomePlanta == 'Cana-de-açúcar' or 'Cana-de-açucar' or 'Cana-de-acucar' or 'Cana-de-acúcar' or 'Cana de açúcar' or 'Cana de açucar' or 'Cana de acucar' or 'Cana de acúcar' or 'cana-de-açúcar' or 'cana-de-açucar' or 'cana-de-acucar' or 'cana-de-acúcar' or 'cana de açúcar' or 'cana de açucar' or 'cana de acucar' or 'cana de acúcar' or 'Cana-de-Açúcar' or 'Cana-de-Açucar' or 'Cana-de-Acucar' or 'Cana-de-Acúcar' or 'Cana de Açúcar' or 'Cana de Açucar' or 'Cana de Acucar' or 'Cana de Acúcar':
-            if nomePraga == 'Lagarta-do-cartucho' or 'Lagarta do cartucho' or 'lagarta-do-cartucho' or 'lagarta do cartucho' or 'Lagarta-do-Cartucho' or 'Lagarta do Cartucho':
+            if nomePraga == 'Lagarta-do-cartucho' or nomePraga == 'Lagarta do cartucho' or nomePraga == 'lagarta-do-cartucho' or nomePraga == 'lagarta do cartucho' or nomePraga == 'Lagarta-do-Cartucho' or nomePraga == 'Lagarta do Cartucho':
                   print('Faça o tratamento k')
       
       elif nomePlanta == 'Feijao' or 'Feijão' or 'feijao' or 'Feijão':
-            if nomePraga == 'Lagarta-do-cartucho' or 'Lagarta do cartucho' or 'lagarta-do-cartucho' or 'lagarta do cartucho' or 'Lagarta-do-Cartucho' or 'Lagarta do Cartucho':
+            if nomePraga == 'Lagarta-do-cartucho' or nomePraga == 'Lagarta do cartucho' or nomePraga == 'lagarta-do-cartucho' or nomePraga == 'lagarta do cartucho' or nomePraga == 'Lagarta-do-Cartucho' or nomePraga == 'Lagarta do Cartucho':
                   print('Faça o tratamento l')
-            elif nomePraga == 'Lagarta helicoverpa' or 'lagarta helicoverpa' or 'Lagarta Helicoverpa':
+            elif nomePraga == 'Lagarta helicoverpa' or nomePraga == 'lagarta helicoverpa' or nomePraga == 'Lagarta Helicoverpa':
                   print ('Faça o tratamento m')
       
       elif nomePlanta == 'girassol' or 'Girassol':
-            if nomePraga == 'Percevejo-verde-pequeno' or 'Percevejo-Verde-Pequeno' or 'percevejo-verde-pequeno' or 'Percevejo verde pequeno' or 'Percevejo verde pequeno' or 'percevejo verde pequeno':
+            if nomePraga == 'Percevejo-verde-pequeno' or nomePraga == 'Percevejo-Verde-Pequeno' or nomePraga == 'percevejo-verde-pequeno' or nomePraga == 'Percevejo verde pequeno' or nomePraga == 'Percevejo verde pequeno' or nomePraga == 'percevejo verde pequeno':
                   print('Faça o tratamento n')
-            elif nomePraga == 'Percevejo-da-soja' or 'percevejo-da-soja' or 'Percevejo-da-Soja' or 'Percevejo da soja' or 'percevejo da soja' or 'Percevejo da Soja':
+            elif nomePraga == 'Percevejo-da-soja' or nomePraga == 'percevejo-da-soja' or nomePraga == 'Percevejo-da-Soja' or nomePraga == 'Percevejo da soja' or nomePraga == 'percevejo da soja' or nomePraga == 'Percevejo da Soja':
                   print('Faça o tratamento o')
-            elif nomePraga == 'Percevejo-marrom' or 'percevejo-marrom' or 'Percevejo-Marrom' or 'Percevejo marrom' or 'percevejo marrom' or 'Percevejo Marrom':
+            elif nomePraga == 'Percevejo-marrom' or nomePraga == 'percevejo-marrom' or nomePraga == 'Percevejo-Marrom' or nomePraga == 'Percevejo marrom' or nomePraga == 'percevejo marrom' or nomePraga == 'Percevejo Marrom':
                   print('Faça o tratamento p')
       
       elif nomePlanta == 'milho' or 'Milho':
-            if nomePraga == 'Percevejo-barriga-verde' or 'Percevejo-Barriga-Verde' or 'percevejo-barriga-verde' or 'Percevejo barriga verde' or 'Percevejo Barriga Verde' or 'percevejo-barriga-verde':
+            if nomePraga == 'Percevejo-barriga-verde' or nomePraga == 'Percevejo-Barriga-Verde' or nomePraga == 'percevejo-barriga-verde' or nomePraga == 'Percevejo barriga verde' or nomePraga == 'Percevejo Barriga Verde' or nomePraga == 'percevejo-barriga-verde':
                   print('Faça o tratamento q')
-            elif nomePraga == 'Lagarta helicoverpa' or 'lagarta helicoverpa' or 'Lagarta Helicoverpa':
+            elif nomePraga == 'Lagarta helicoverpa' or nomePraga == 'lagarta helicoverpa' or nomePraga == 'Lagarta Helicoverpa':
                   print ('Faça o tratamento r')
-            elif nomePraga == 'Cigarrinha do milho' or 'cigarrinha do milho' or 'Cigarrinha do Milho':
+            elif nomePraga == 'Cigarrinha do milho' or nomePraga == 'cigarrinha do milho' or nomePraga == 'Cigarrinha do Milho':
                   print ('Faça o tratamento s')
-            elif nomePraga == 'Vaquinha verde amarela' or 'vaquinha verde amarela' or 'Vaquinha Verde Amarela':
+            elif nomePraga == 'Vaquinha verde amarela' or nomePraga == 'vaquinha verde amarela' or nomePraga == 'Vaquinha Verde Amarela':
                   print('Faça o tratamento t')
-            elif nomePraga == 'Cupim' or 'cupim':
+            elif nomePraga == 'Cupim' or nomePraga == 'cupim':
                   print('Faça o tratamento u')
-            elif nomePraga == 'Pulgão' or 'Pulgao' or 'pulgão' or 'pulgao':
+            elif nomePraga == 'Pulgão' or nomePraga == 'Pulgao' or nomePraga == 'pulgão' or nomePraga == 'pulgao':
                   print('Faça o tratamento v')
       
       elif nomePlanta == 'soja' or 'Soja':
-            if nomePraga == 'Lagarta-do-cartucho' or 'Lagarta do cartucho' or 'lagarta-do-cartucho' or 'lagarta do cartucho' or 'Lagarta-do-Cartucho' or 'Lagarta do Cartucho':
+            if nomePraga == 'Lagarta-do-cartucho' or nomePraga == 'Lagarta do cartucho' or nomePraga == 'lagarta-do-cartucho' or nomePraga == 'lagarta do cartucho' or nomePraga == 'Lagarta-do-Cartucho' or nomePraga == 'Lagarta do Cartucho':
                   print('Faça o tratamento w')
-            elif nomePraga == 'Percevejo-marrom' or 'percevejo-marrom' or 'Percevejo-Marrom' or 'Percevejo marrom' or 'percevejo marrom' or 'Percevejo Marrom':
+            elif nomePraga == 'Percevejo-marrom' or nomePraga == 'percevejo-marrom' or nomePraga == 'Percevejo-Marrom' or nomePraga == 'Percevejo marrom' or nomePraga == 'percevejo marrom' or nomePraga == 'Percevejo Marrom':
                   print('Faça o tratamento x')
-            elif nomePraga == 'Percevejo-verde-pequeno' or 'Percevejo-Verde-Pequeno' or 'percevejo-verde-pequeno' or 'Percevejo verde pequeno' or 'Percevejo verde pequeno' or 'percevejo verde pequeno':
+            elif nomePraga == 'Percevejo-verde-pequeno' or nomePraga == 'Percevejo-Verde-Pequeno' or nomePraga == 'percevejo-verde-pequeno' or nomePraga == 'Percevejo verde pequeno' or nomePraga == 'Percevejo verde pequeno' or nomePraga == 'percevejo verde pequeno':
                   print('Faça o tratamento y')
-            elif nomePraga == 'Percevejo-da-soja' or 'percevejo-da-soja' or 'Percevejo-da-Soja' or 'Percevejo da soja' or 'percevejo da soja' or 'Percevejo da Soja':
+            elif nomePraga == 'Percevejo-da-soja' or nomePraga == 'percevejo-da-soja' or nomePraga == 'Percevejo-da-Soja' or nomePraga == 'Percevejo da soja' or nomePraga == 'percevejo da soja' or nomePraga == 'Percevejo da Soja':
                   print('Faça o tratamento z')
-            elif nomePraga == 'Lagarta helicoverpa' or 'lagarta helicoverpa' or 'Lagarta Helicoverpa':
+            elif nomePraga == 'Lagarta helicoverpa' or nomePraga == 'lagarta helicoverpa' or nomePraga == 'Lagarta Helicoverpa':
                   print ('Faça o tratamento aa')
             
       elif nomePlanta == 'trigo' or 'Trigo':
-            if nomePraga == 'Lagarta-do-cartucho' or 'Lagarta do cartucho' or 'lagarta-do-cartucho' or 'lagarta do cartucho' or 'Lagarta-do-Cartucho' or 'Lagarta do Cartucho':
+            if nomePraga == 'Lagarta-do-cartucho' or nomePraga == 'Lagarta do cartucho' or nomePraga == 'lagarta-do-cartucho' or nomePraga == 'lagarta do cartucho' or nomePraga == 'Lagarta-do-Cartucho' or nomePraga == 'Lagarta do Cartucho':
                   print('Faça o tratamento bb')
-            elif nomePraga == 'Percevejo-barriga-verde' or 'Percevejo-Barriga-Verde' or 'percevejo-barriga-verde' or 'Percevejo barriga verde' or 'Percevejo Barriga Verde' or 'percevejo-barriga-verde':
+            elif nomePraga == 'Percevejo-barriga-verde' or nomePraga == 'Percevejo-Barriga-Verde' or nomePraga == 'percevejo-barriga-verde' or nomePraga == 'Percevejo barriga verde' or nomePraga == 'Percevejo Barriga Verde' or nomePraga == 'percevejo-barriga-verde':
                   print('Faça o tratamento cc')
-
 
 
 #menu
@@ -159,6 +158,7 @@ while opcaoMenu != 9:
 #   praga ou plantação que não tenha no sistema, dizer que ainda não há esse no sistema
             case 4:
                   print(Indicacao())
+                  break
 
 
 #Opção 5 do menu: quem faz parte do projeto PlanTech? ---- Colocar o nome e RM de todos do grupo
