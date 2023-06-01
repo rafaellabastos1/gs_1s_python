@@ -190,8 +190,8 @@ while opcaoMenu != 9:
             '\n5. Quem faz parte do projeto PlanTech?' #Douglas
             '\n6. Quero indicar um tratamento para uma praga' #Gustavo
             '\n7. Feedback' #Douglas
-            '\n8. Outro' #Rafa
-            '\n9. Encerrar') #Rafa
+            '\n8. Outro'
+            '\n9. Encerrar')
       opcaoMenu = int(input('Selecione uma das opções acima: '))
 
 #Opção 1 do menu: desejo saber mais sobre a missão da PlanTech ---- Colocar o primeiro e o último parágrafo do
@@ -239,13 +239,12 @@ while opcaoMenu != 9:
       if opcaoMenu == 7:
             print("-")
 
-#Opção 8 do menu: outro ---- Colocar pequenas informações e onde pode encontrá-las: se quer tirar dúvidas mais
-#   específicas, entrar no nosso ChatBot; Se quer textos mais explicativos como agricultura sustentável, uso de
-#   IA's generativas na produção, distribuição de alimentos pelo mundo, modelos de cultivos eficientes e calendário
-#   de controle de pragas, entrar no site da PlanTech.
+#Opção 8 do menu: outro
       if opcaoMenu == 8:
-            print("-")
+            print('\nVeja só:')
+            print('1. Se quiser retirar suas dúvidas mais específicas, entre no nosso ChatBot que ele te auxiliará')
+            print('2. Se quer textos mais explicativos como agricultura sustentável, uso de IAs generativas na produção, distribuição de alimentos pelo mundo, modelos de cultivos eficientes, calendário de controle de pragas ou outros textos, entre no site da PlanTech')
 
 #Opção 9 do menu: encerramento
       if opcaoMenu == 9:
-            print("-")
+            print('\nMuito obrigado, até a próxima!')
