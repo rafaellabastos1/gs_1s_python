@@ -178,6 +178,125 @@ def Indicacao():
       else:
             print('Essa planta não está em nosso sistema')
 
+#Cadastro
+
+def Cadastro():
+      confirmCadastroup = ""
+      print("\nPor favor realize o cadastro: ")
+      while confirmCadastroup != "1" and confirmCadastroup != "SIM":
+            opcIdentup = ""
+            opcIdent2up = ""
+            opcComplementoup = ""
+            confirmCadastroup = ""
+            rg = ""
+            telefone = ""
+            cep = ""
+            cnh = ''
+            NomeCompleto = ""
+            email = ""
+            rua = ""
+            nmrResidencia = ""
+            pais = ""
+            estado = ""
+            cidade = ""
+            bairro = ""
+            while NomeCompleto == "":
+                  NomeCompleto = input("\nDigite seu nome: ")
+            while opcIdentup != "1" and opcIdentup != "RG" and opcIdentup != "2" and opcIdentup != "CNH":
+                  opcIdent = input("\n(1) - RG \n(2) - CNH \nEscolha qual você deseja informar: ")
+                  opcIdentup = opcIdent.upper()
+                  if opcIdentup == "1" or opcIdentup == "RG":
+                        while len(rg) != 9:      
+                              rg = input("\nRG: ")
+                              if  len(rg) != 9:
+                                    print("RG inválido! Digite apenas números.")
+                        
+                        #print("Digite apenas números!")
+                  elif opcIdentup == "2" or opcIdentup == "CNH":
+                        while len(cnh) != 10:
+                              cnh = input("\nCNH: ")
+                              if len(cnh) != 10:
+                                    print("Digite um CNH válido. Não utilize indicadores.")
+            while opcIdent2up != "1" and opcIdent2up != "CPF" and opcIdent2up and "2" and opcIdent2up != "CNPJ":
+                  opcIdent2 = input("\n(1) - CPF \n(2) - CNPJ \nEscolha qual você deseja informar: ")
+                  opcIdent2up = opcIdent2.upper()
+                  if opcIdent2up == "1" or opcIdent2up == "CPF":
+                        while len(cpf) != 11:
+                              cpf = input("\nCPF: ")
+                              if len(cpf) != 11:
+                                    print("Digite um CPF válido. Utilize apenas números.")
+                  elif opcIdent2up == "2" or opcIdent2up == "CNPJ":
+                        while len(cnpj) != 14:
+                              cnpj = input("\nCNPJ: ")
+                              if len(cnpj) != 14:
+                                    print("Digite um CNPJ válido. Não utilize indicadores.")
+            while email == "": 
+                  email = input("\nE-mail: ")
+            while len(telefone) != 14:
+                  telefone = input("\nTelefone: ")
+                  if len(telefone) != 14:
+                        print("Digite um telefone válido. Ex(+5511999999999).")
+            while rua == "":
+                  rua = input("\nRua: ")
+            while nmrResidencia == "":
+                  nmrResidencia = input("\nNúmero de Residência: ")
+            while opcComplementoup != "1" and opcComplementoup != "SIM" and opcComplementoup != "2" and opcComplementoup != "NAO" and opcComplementoup != "NÃO":
+                  opcComplemento = input("\n(1) - Sim \n(2) - Não \nDeseja informar um complemento?: ")
+                  opcComplementoup = opcComplemento.upper()
+                  if opcComplementoup == "1" or opcComplementoup == "SIM":
+                        complemento = input("\nComplemento: ")
+                  elif opcComplementoup == "2" or opcComplementoup == "NAO" or opcComplementoup == "NÃO":
+                        print("")
+            while pais == "":
+                  pais = input("\nPaís: ")
+            while estado == "":
+                  estado = input("\nEstado: ")
+            while cidade == "":
+                  cidade = input("\nCidade: ")
+            while bairro == "":
+                  bairro = input("\nBairro: ")
+            while len(cep) !=8:
+                  cep = input("\nCEP: ")
+                  if len(cep) != 8:
+                        print("Digite um CEP válido. Use apenas números.")
+            print("\nConfirme as informações: ")
+            while confirmCadastroup != "1" and confirmCadastroup != "SIM" and confirmCadastroup != "2" and confirmCadastroup != "NAO" and confirmCadastroup != "NÃO" :
+            
+                  print("\n--- Dados Pessoais ---")
+                  print(f"Nome:  {NomeCompleto}")
+                  if opcIdentup == "1" or opcIdentup == "RG":
+                        print(f"RG: {rg}")
+                  if opcIdentup == "2" or opcIdentup == "CNH":
+                        print(f"CNH: {cnh}")
+                  if opcIdent2up == "1" or opcIdent2up == "CPF":
+                        print(f"CPF: {cpf}")
+                  if opcIdent2up == "2" or opcIdent2up == "CNPJ":
+                        print(f"CNPJ: {cnpj}")
+                  print(f"E-mail: {email}")
+                  print(f"Telefone: {telefone}")
+                  print("\n--- Endereço ---")
+                  print(f"Rua: {rua}")
+                  print(f"Número de Residência: {nmrResidencia}")
+                  if opcComplementoup == "1" or opcComplementoup == "SIM":
+                        print(f"Complemento: {complemento}")
+                  print(f"País: {pais}")
+                  print(f"Estado: {estado}")
+                  print(f"Cidade: {cidade}")
+                  print(f"Bairro: {bairro}")
+                  print(f"CEP: {cep}")
+                  confirmCadastro = input("\n(1) - Sim \n(2) - Não \nOs dados estão corretos? \nEscolha uma opção: ")
+                  confirmCadastroup = confirmCadastro.upper()
+                  if confirmCadastroup == "1" or confirmCadastroup == "SIM": 
+                        print("Concluímos seu cadastro!")
+                  elif confirmCadastroup == "2" or confirmCadastroup == "NAO" or confirmCadastroup == "NÃO":
+                        print("Faça novamente o cadastro!")
+      qntdDrone = int(input("\nQuantos drones você deseja comprar? \nDrones: "))
+      if qntdDrone > 0 and qntdDrone < 999:
+            print(f"Obrigado pela compra! Seus {qntdDrone} drones chegaram em até 15 dias úteis.")
+            print("Lembramos que foi apenas uma simulação, a PlanTech está em desenvolvimento portanto os drones não serão enviados.")
+      else:
+            print("O limite de drones é de 1 a 999.")
+
 #menu
 opcaoMenu = 0
 while opcaoMenu != 9:
@@ -197,7 +316,17 @@ while opcaoMenu != 9:
 #Opção 1 do menu: desejo saber mais sobre a missão da PlanTech ---- Colocar o primeiro e o último parágrafo do
 #   arquivo "Descrição geral da solução 2"
       if opcaoMenu == 1:
-            print("-")
+            print("\n---- PlanTech ----"
+                        + "\n A fome e a insegurança alimentar são problemas mundiais que afetam milhões de pessoas e acarretam muitos" 
+                        + " outros problemas, como o nanismo e a caquexia. São muitos os fatores que podem levar à fome, tais como a falta de agricultura sustentável," 
+                        + " falta de acesso à alimentos, desigualdades, desemprego, alimentos não-nutritivos, entre outros fatores. Pensando nisso," 
+                        + " a PlanTech desenvolveu um projeto que visa a diminuição do desperdício de alimentos e o cultivo de alimentos mais saudáveis com o combate de pragas" 
+                        + " ainda em sua fase inicial de ataque nas plantações.   "
+                        + "\n Os benefícios dessa tecnologia é a detecção da praga em fase inicial, o que reduz o nível de perda de alimentos e o valor do produto final," 
+                        + " a preservação do solo e das plantações e a garantia de uma alimentação saudável e nutritiva – pois a indicação de tratamento da plantação é saudável." 
+                        + " Essa tecnologia pode ser levada para agricultores familiares e regiões mais afastadas que muito sofrem com esse problema, pois, dessa forma," 
+                        + " contribuirá com o acesso à uma tecnologia capaz de diminuir suas perdas de alimentos por pragas. Além disso, estes pequenos agricultores se sentirão mais confiantes" 
+                        + " em expandir sua área de plantio, já que não terá a preocupação com a perda de sua plantação.")
 
 #Opção 2 do menu: desejo saber sobre o funcionamenento do drone ---- Colocar o segundo parágrafo do arquivo
 #   "Descrição geral da solução 2"
@@ -216,7 +345,14 @@ while opcaoMenu != 9:
 #   para dizer também que, como foi dito, este era apenas um teste e que, por isso, não foi pedido dados de
 #   pagamento e nem os drones serão entregues de fato ao endereço mencionado.
       if opcaoMenu == 3:
-            print("-")
+            print("\nA PlanTech ainda é um projeto em desenvolvimento, ainda não é possível realizar a compra dos drones.")
+            opcSimulacao = input("\nDeseja realizar uma simulação da compra dos drone que serão disponibilizados pela PlanTech? \n(1) - Sim \n(2) - Não \nEscolha uma opção: ")
+            opcSimulacaoup = opcSimulacao.upper()
+            if opcSimulacaoup == "1" or  opcSimulacaoup == "SIM":
+                 Cadastro()
+
+
+
 
 #Opção 4 do menu: Identifiquei uma praga na plantação. O que faço agora?
       if opcaoMenu == 4:
