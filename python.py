@@ -22,154 +22,185 @@ def Indicacao():
       nomePlanta = input('\nQual o nome da plantação atacada? ')
       nomePraga = input('Qual o nome da praga? ')
 
+      nomePlanta = nomePlanta.upper()
+      nomePraga = nomePraga.upper()
+
       #Algodão
-      if nomePlanta == 'algodão' or nomePlanta == 'algodao' or nomePlanta == 'Algodão' or nomePlanta == 'Algodao':
-            if nomePraga == 'Lagarta-do-cartucho' or nomePraga == 'lagarta-do-cartucho' or nomePraga == 'Lagarta-do-Cartucho' or nomePraga == 'Lagarta do cartucho' or nomePraga == 'lagarta do cartucho' or nomePraga == 'Lagarta do Cartucho':
+      if nomePlanta == 'ALGODÃO' or nomePlanta == 'ALGODAO':
+            if nomePraga == 'LAGARTA-DO-CARTUCHO' or 'LAGARTA DO CARTUCHO':
                   print(f'\n{spodovir}')
                   return spodovir
-            elif nomePraga == 'Percevejo-marrom' or nomePraga == 'percevejo-marrom' or nomePraga == 'Percevejo-Marrom' or nomePraga == 'Percevejo marrom' or nomePraga == 'percevejo marrom' or nomePraga == 'Percevejo Marrom':
+            
+            elif nomePraga == 'PERCEVEJO-MARROM' or nomePraga == 'PERCEVEJO MARROM':
                   print(f'\n{engeoPlenoS}')
                   print('\nObservação: de 200 a 250 mL por hectare com no máximo 3 aplicações, uma a cada 7 dias; o volume da calda deve ser de 150 litros por hectare')
                   return engeoPlenoS
-            elif nomePraga == 'Lagarta helicoverpa' or nomePraga == 'lagarta helicoverpa' or nomePraga == 'Lagarta Helicoverpa':
+            
+            elif nomePraga == 'LAGARTA HELICOVERPA':
                   print(f'\n{bacillus}')
                   return bacillus
-            elif nomePraga == 'Pulgão do algodoeiro' or nomePraga == 'Pulgao do algodoeiro' or nomePraga == 'pulgão do algodoeiro' or nomePraga == 'pulgao do algodoeiro' or nomePraga == 'Pulgão do Algodoeiro' or nomePraga == 'Pulgao do Algodoeiro':
+            
+            elif nomePraga == 'PULGÃO DE ALGODOEIRO' or nomePraga == 'PULGAO DE ALGODOEIRO':
                   print(f'\n{aug}')
                   print('\nObservação: de 540 a 720 mL a cada 100kg com no máximo 1 aplicação; o volume da calda deve ser de 500mL a cada 100kg.')
                   return aug
-            elif nomePraga == 'Tripes' or nomePraga == 'tripes':
+            
+            elif nomePraga == 'TRIPES':
                   print(f'{aug}')
                   print('\nObservação: de 540 a 720 mL a cada 100kg com no máximo 1 aplicação; o volume da calda deve ser de 500mL a cada 100kg.')
                   return aug
-            elif nomePraga == 'Cupim do montículo' or nomePraga == 'Cupim do monticulo' or nomePraga == 'cupim do montículo' or nomePraga == 'cupim do monticulo' or  nomePraga == 'Cupim do Montículo' or nomePraga == 'Cupim do Monticulo':       
+            
+            elif nomePraga == 'CUPIM DO MONTÍCULO' or nomePraga == 'CUPIM DO MONTICULO':       
                   print(f'{aug}')
                   print('\nObservação: 720 mL a cada 100kg com no máximo 1 aplicação; o volume da calda deve ser de 500mL a cada 100kg.')
                   return aug
             else:
                   print('Essa praga não está em nosso sistema')
       
+
       #Arroz
-      elif nomePlanta == 'arroz' or nomePlanta == 'Arroz':
-            if nomePraga == 'Lagarta-do-cartucho' or nomePraga == 'Lagarta do cartucho' or nomePraga == 'lagarta-do-cartucho' or nomePraga == 'lagarta do cartucho' or nomePraga == 'Lagarta-do-Cartucho' or nomePraga == 'Lagarta do Cartucho':
+      elif nomePlanta == 'ARROZ':
+            if nomePraga == 'LAGARTA-DO-CARTUCHO' or nomePraga == 'LAGARTA DO CARTUCHO':
                   print (f'{spodovir}')
                   return spodovir
-            elif nomePraga == 'Percevejo-do-arroz' or nomePraga == 'Percevejo do arroz' or nomePraga == 'percevejo-do-arroz' or nomePraga == 'percevejo do arroz' or nomePraga == 'Percevejo-do-Arroz' or nomePraga == 'Percevejo do Arroz':
+            
+            elif nomePraga == 'PERCEVEJO-DO-ARROZ' or nomePraga == 'PERCEVEJO DO ARROZ':
                   print (f'{engeoPlenoS}')
                   print('\nObservação: de 150 a 200 mL por hectare com no máximo 1 aplicação; o volume da calda deve ser de 200 litros por hectare')
                   return engeoPlenoS
             else:
                   print('Essa praga não está em nosso sistema')
       
+
       #Aveia
-      elif nomePlanta == 'aveia' or nomePlanta == 'Aveia':
-            if nomePraga == 'Lagarta-do-cartucho' or nomePraga == 'Lagarta do cartucho' or nomePraga == 'lagarta-do-cartucho' or nomePraga == 'lagarta do cartucho' or nomePraga == 'Lagarta-do-Cartucho' or nomePraga == 'Lagarta do Cartucho':
+      elif nomePlanta == 'AVEIA':
+            if nomePraga == 'LAGARTA-DO-CARTUCHO' or nomePraga == 'LAGARTA DO CARTUCHO':
                   print (f'{spodovir}')
                   return spodovir
             else:
                   print('Essa praga não está em nosso sistema')
       
+
       #Café
-      elif nomePlanta == 'cafe' or nomePlanta == 'café' or nomePlanta == 'Cafe' or nomePlanta == 'Café':
-            if nomePraga == 'Lagarta helicoverpa' or nomePraga == 'lagarta helicoverpa' or nomePraga == 'Lagarta Helicoverpa':
+      elif nomePlanta == 'CAFÉ' or nomePlanta == 'CAFE':
+            if nomePraga == 'LAGARTA HELICOVERPA':
                   print (f'{bacillus}')
                   return bacillus
             else:
                   print('Essa praga não está em nosso sistema')
 
+
       #Cana-de-açúcar
-      elif nomePlanta == 'Cana-de-açúcar' or nomePlanta == 'Cana-de-açucar' or nomePlanta == 'Cana-de-acucar' or nomePlanta == 'Cana-de-acúcar' or nomePlanta == 'Cana de açúcar' or nomePlanta == 'Cana de açucar' or nomePlanta == 'Cana de acucar' or nomePlanta == 'Cana de acúcar' or nomePlanta == 'cana-de-açúcar' or nomePlanta == 'cana-de-açucar' or nomePlanta == 'cana-de-acucar' or nomePlanta == 'cana-de-acúcar' or nomePlanta == 'cana de açúcar' or nomePlanta == 'cana de açucar' or nomePlanta == 'cana de acucar' or nomePlanta == 'cana de acúcar' or nomePlanta == 'Cana-de-Açúcar' or nomePlanta == 'Cana-de-Açucar' or nomePlanta == 'Cana-de-Acucar' or nomePlanta == 'Cana-de-Acúcar' or nomePlanta == 'Cana de Açúcar' or nomePlanta == 'Cana de Açucar' or nomePlanta == 'Cana de Acucar' or nomePlanta == 'Cana de Acúcar':
-            if nomePraga == 'Lagarta-do-cartucho' or nomePraga == 'Lagarta do cartucho' or nomePraga == 'lagarta-do-cartucho' or nomePraga == 'lagarta do cartucho' or nomePraga == 'Lagarta-do-Cartucho' or nomePraga == 'Lagarta do Cartucho':
+      elif nomePlanta == 'CANA-DE-AÇÚCAR' or 'CANA-DE-AÇUCAR' or 'CANA-DE-ACUCAR' or 'CANA DE AÇÚCAR' or 'CANA DE AÇUCAR' or 'CANA DE AÇUCAR' or 'CANA DE ACUCAR':
+            if nomePraga == 'LAGARTA-DO-CARTUCHO' or nomePraga == 'LAGARTA DO CARTUCHO':
                   print(f'{spodovir}')
                   return spodovir
             else:
                   print('Essa praga não está em nosso sistema')
       
+
       #Feijão
-      elif nomePlanta == 'Feijao' or nomePlanta == 'Feijão' or nomePlanta == 'feijao' or nomePlanta == 'Feijão':
-            if nomePraga == 'Lagarta-do-cartucho' or nomePraga == 'Lagarta do cartucho' or nomePraga == 'lagarta-do-cartucho' or nomePraga == 'lagarta do cartucho' or nomePraga == 'Lagarta-do-Cartucho' or nomePraga == 'Lagarta do Cartucho':
+      elif nomePlanta == 'FEIJAO' or nomePlanta == 'FEIJÃO':
+            if nomePraga == 'LAGARTA-DO-CARTUCHO' or nomePraga == 'LAGARTA DO CARTUCHO':
                   print(f'{spodovir}')
                   return spodovir
-            elif nomePraga == 'Lagarta helicoverpa' or nomePraga == 'lagarta helicoverpa' or nomePraga == 'Lagarta Helicoverpa':
+            
+            elif nomePraga == 'LAGARTA HELICOVERPA':
                   print (f'{bacillus}')
                   return bacillus
             else:
                   print('Essa praga não está em nosso sistema')
       
+
       #Girassol
-      elif nomePlanta == 'girassol' or nomePlanta == 'Girassol':
-            if nomePraga == 'Percevejo-verde-pequeno' or nomePraga == 'Percevejo-Verde-Pequeno' or nomePraga == 'percevejo-verde-pequeno' or nomePraga == 'Percevejo verde pequeno' or nomePraga == 'Percevejo verde pequeno' or nomePraga == 'percevejo verde pequeno':
+      elif nomePlanta == 'GIRASSOL':
+            if nomePraga == 'PERCEVEJO-VERDE-PEQUENO' or nomePraga == 'PERCEVEJO VERDE PEQUENO':
                   print(f'{engeoPlenoS}')
                   print('\nObservação: de 300 a 400 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 150 litros por hectare')
                   return engeoPlenoS
-            elif nomePraga == 'Percevejo-da-soja' or nomePraga == 'percevejo-da-soja' or nomePraga == 'Percevejo-da-Soja' or nomePraga == 'Percevejo da soja' or nomePraga == 'percevejo da soja' or nomePraga == 'Percevejo da Soja':
+            
+            elif nomePraga == 'PERCEVEJO-DA-SOJA' or nomePraga == 'PERCEVEJO DA SOJA':
                   print(f'{engeoPlenoS}')
                   print('\nObservação: de 300 a 400 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 150 litros por hectare')
                   return engeoPlenoS
-            elif nomePraga == 'Percevejo-marrom' or nomePraga == 'percevejo-marrom' or nomePraga == 'Percevejo-Marrom' or nomePraga == 'Percevejo marrom' or nomePraga == 'percevejo marrom' or nomePraga == 'Percevejo Marrom':
+            
+            elif nomePraga == 'PERCEVEJO-MARROM' or nomePraga == 'PERCEVEJO MARROM':
                   print(f'{engeoPlenoS}')
                   print('\nObservação: de 300 a 400 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 150 litros por hectare')
                   return engeoPlenoS
             else:
                   print('Essa praga não está em nosso sistema')
       
+      
       #Milho
-      elif nomePlanta == 'milho' or nomePlanta == 'Milho':
-            if nomePraga == 'Percevejo-barriga-verde' or nomePraga == 'Percevejo-Barriga-Verde' or nomePraga == 'percevejo-barriga-verde' or nomePraga == 'Percevejo barriga verde' or nomePraga == 'Percevejo Barriga Verde' or nomePraga == 'percevejo-barriga-verde':
+      elif nomePlanta == 'MILHO':
+            if nomePraga == 'PERCEVEJO-BARRIGA-VERDE' or nomePraga == 'PERCEVEJO BARRIGA VERDE':
                   print(f'{engeoPlenoS}')
                   print('\nObservação: de 150 a 250 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 200 litros por hectare')
                   return engeoPlenoS
-            elif nomePraga == 'Lagarta helicoverpa' or nomePraga == 'lagarta helicoverpa' or nomePraga == 'Lagarta Helicoverpa':
+            
+            elif nomePraga == 'LAGARTA HELICOVERPA':
                   print (f'{bacillus}')
                   return bacillus
-            elif nomePraga == 'Cigarrinha do milho' or nomePraga == 'cigarrinha do milho' or nomePraga == 'Cigarrinha do Milho':
+            
+            elif nomePraga == 'CIGARRINHA DO MILHO':
                   print (f'{aug}')
                   print('\nObservação: 960 mL para cada 100kg com apenas uma aplicação; o volume da calda deve ser 500 mL para cada 100kg')
                   return aug
-            elif nomePraga == 'Vaquinha verde amarela' or nomePraga == 'vaquinha verde amarela' or nomePraga == 'Vaquinha Verde Amarela':
+            
+            elif nomePraga == 'VAQUINHA VERDE AMARELA':
                   print(f'{aug}')
                   print('\nObservação: 960 mL para cada 100kg com apenas uma aplicação; o volume da calda deve ser 500 mL para cada 100kg')
                   return aug
-            elif nomePraga == 'Cupim' or nomePraga == 'cupim':
+            
+            elif nomePraga == 'CUPIM':
                   print(f'{aug}')
                   print('\nObservação: 300 mL para cada 100kg com apenas uma aplicação; o volume da calda deve ser 500 mL para cada 100kg')
                   return aug
-            elif nomePraga == 'Pulgão' or nomePraga == 'Pulgao' or nomePraga == 'pulgão' or nomePraga == 'pulgao':
+            
+            elif nomePraga == 'PULGÃO' or nomePraga == 'PULGAO':
                   print(f'{aug}')
                   print('\nObservação: 480 mL para cada 100kg com apenas uma aplicação; o volume da calda deve ser 500 mL para cada 100kg')
                   return aug
             else:
                   print('Essa praga não está em nosso sistema')
       
+
       #Soja
-      elif nomePlanta == 'soja' or nomePlanta == 'Soja':
-            if nomePraga == 'Lagarta-do-cartucho' or nomePraga == 'Lagarta do cartucho' or nomePraga == 'lagarta-do-cartucho' or nomePraga == 'lagarta do cartucho' or nomePraga == 'Lagarta-do-Cartucho' or nomePraga == 'Lagarta do Cartucho':
+      elif nomePlanta == 'SOJA':
+            if nomePraga == 'LAGARTA-DO-CARTUCHO' or nomePraga == 'LAGARTA DO CARTUCHO':
                   print(f'{spodovir}')
                   return spodovir
-            elif nomePraga == 'Percevejo-marrom' or nomePraga == 'percevejo-marrom' or nomePraga == 'Percevejo-Marrom' or nomePraga == 'Percevejo marrom' or nomePraga == 'percevejo marrom' or nomePraga == 'Percevejo Marrom':
+            
+            elif nomePraga == 'PERCEVEJO-MARROM' or nomePraga == 'PERCEVEJO MARROM':
                   print(f'{engeoPlenoS}')
                   print('\nObservação: 200 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 200 litros por hectare.')
                   return engeoPlenoS
-            elif nomePraga == 'Percevejo-verde-pequeno' or nomePraga == 'Percevejo-Verde-Pequeno' or nomePraga == 'percevejo-verde-pequeno' or nomePraga == 'Percevejo verde pequeno' or nomePraga == 'Percevejo verde pequeno' or nomePraga == 'percevejo verde pequeno':
+            
+            elif nomePraga == 'PERCEVEJO-VERDE-PEQUENO' or nomePraga == 'PERCEVEJO VERDE PEQUENO':
                   print(f'{engeoPlenoS}')
                   print('\nObservação: de 150 a 180 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 200 litros por hectare')
                   return engeoPlenoS
-            elif nomePraga == 'Percevejo-da-soja' or nomePraga == 'percevejo-da-soja' or nomePraga == 'Percevejo-da-Soja' or nomePraga == 'Percevejo da soja' or nomePraga == 'percevejo da soja' or nomePraga == 'Percevejo da Soja':
+            
+            elif nomePraga == 'PERCEVEJO-DA-SOJA' or nomePraga == 'PERCEVEJO DA SOJA':
                   print(f'{engeoPlenoS}')
                   print('\nObservação: de 150 a 180 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 200 litros por hectare')
                   return engeoPlenoS
-            elif nomePraga == 'Lagarta helicoverpa' or nomePraga == 'lagarta helicoverpa' or nomePraga == 'Lagarta Helicoverpa':
+            
+            elif nomePraga == 'LAGARTA HELICOVERPA':
                   print (f'{bacillus}')
                   return bacillus
             else:
                   print('Essa praga não está em nosso sistema')
-            
+
+
       #Trigo
-      elif nomePlanta == 'trigo' or nomePlanta == 'Trigo':
-            if nomePraga == 'Lagarta-do-cartucho' or nomePraga == 'Lagarta do cartucho' or nomePraga == 'lagarta-do-cartucho' or nomePraga == 'lagarta do cartucho' or nomePraga == 'Lagarta-do-Cartucho' or nomePraga == 'Lagarta do Cartucho':
+      elif nomePlanta == 'TRIGO':
+            if nomePraga == 'LAGARTA-DO-CARTUCHO' or nomePraga == 'LAGARTA DO CARTUCHO':
                   print(f'{spodovir}')
                   return spodovir
-            elif nomePraga == 'Percevejo-barriga-verde' or nomePraga == 'Percevejo-Barriga-Verde' or nomePraga == 'percevejo-barriga-verde' or nomePraga == 'Percevejo barriga verde' or nomePraga == 'Percevejo Barriga Verde' or nomePraga == 'percevejo-barriga-verde':
+            
+            elif nomePraga == 'PERCEVEJO-BARRIGA-VERDE' or nomePraga == 'PERCEVEJO BARRIGA VERDE':
                   print(f'{engeoPlenoS}')
                   print('\nObservação: 150 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 200 litros por hectare')
                   return engeoPlenoS
@@ -178,29 +209,29 @@ def Indicacao():
       else:
             print('Essa planta não está em nosso sistema')
 
-#Cadastro
-
+#Função para fazer o cadastro
 def Cadastro():
-      confirmCadastroup = ""
-      print("\nPor favor realize o cadastro: ")
+      confirmCadastroup = ''
+      print('\nPor favor realize o cadastro: ')
       while confirmCadastroup != "1" and confirmCadastroup != "SIM":
-            opcIdentup = ""
-            opcIdent2up = ""
-            opcComplementoup = ""
-            confirmCadastroup = ""
-            rg = ""
-            telefone = ""
-            cep = ""
+            opcIdentup = ''
+            opcIdent2up = ''
+            opcComplementoup = ''
+            confirmCadastroup = ''
+            rg = ''
+            telefone = ''
+            cep = ''
             cnh = ''
-            NomeCompleto = ""
-            email = ""
-            rua = ""
-            nmrResidencia = ""
-            pais = ""
-            estado = ""
-            cidade = ""
-            bairro = ""
-            while NomeCompleto == "":
+            NomeCompleto = ''
+            email = ''
+            rua = ''
+            nmrResidencia = ''
+            pais = ''
+            estado = ''
+            cidade = ''
+            bairro = ''
+
+            while NomeCompleto == '':
                   NomeCompleto = input("\nDigite seu nome: ")
             while opcIdentup != "1" and opcIdentup != "RG" and opcIdentup != "2" and opcIdentup != "CNH":
                   opcIdent = input("\n(1) - RG \n(2) - CNH \nEscolha qual você deseja informar: ")
@@ -211,12 +242,12 @@ def Cadastro():
                               if  len(rg) != 9:
                                     print("RG inválido! Digite apenas números.")
                         
-                        #print("Digite apenas números!")
                   elif opcIdentup == "2" or opcIdentup == "CNH":
                         while len(cnh) != 10:
                               cnh = input("\nCNH: ")
                               if len(cnh) != 10:
                                     print("Digite um CNH válido. Não utilize indicadores.")
+
             while opcIdent2up != "1" and opcIdent2up != "CPF" and opcIdent2up and "2" and opcIdent2up != "CNPJ":
                   opcIdent2 = input("\n(1) - CPF \n(2) - CNPJ \nEscolha qual você deseja informar: ")
                   opcIdent2up = opcIdent2.upper()
@@ -230,6 +261,7 @@ def Cadastro():
                               cnpj = input("\nCNPJ: ")
                               if len(cnpj) != 14:
                                     print("Digite um CNPJ válido. Não utilize indicadores.")
+
             while email == "": 
                   email = input("\nE-mail: ")
             while len(telefone) != 14:
@@ -260,6 +292,7 @@ def Cadastro():
                   if len(cep) != 8:
                         print("Digite um CEP válido. Use apenas números.")
             print("\nConfirme as informações: ")
+
             while confirmCadastroup != "1" and confirmCadastroup != "SIM" and confirmCadastroup != "2" and confirmCadastroup != "NAO" and confirmCadastroup != "NÃO" :
             
                   print("\n--- Dados Pessoais ---")
@@ -284,16 +317,18 @@ def Cadastro():
                   print(f"Cidade: {cidade}")
                   print(f"Bairro: {bairro}")
                   print(f"CEP: {cep}")
+
                   confirmCadastro = input("\n(1) - Sim \n(2) - Não \nOs dados estão corretos? \nEscolha uma opção: ")
                   confirmCadastroup = confirmCadastro.upper()
                   if confirmCadastroup == "1" or confirmCadastroup == "SIM": 
                         print("Concluímos seu cadastro!")
                   elif confirmCadastroup == "2" or confirmCadastroup == "NAO" or confirmCadastroup == "NÃO":
                         print("Faça novamente o cadastro!")
+
       qntdDrone = int(input("\nQuantos drones você deseja comprar? \nDrones: "))
       if qntdDrone > 0 and qntdDrone < 999:
             print(f"Obrigado pela compra! Seus {qntdDrone} drones chegaram em até 15 dias úteis.")
-            print("Lembramos que foi apenas uma simulação, a PlanTech está em desenvolvimento portanto os drones não serão enviados.")
+            print("Lembramos que foi apenas uma simulação, a PlanTech está em desenvolvimento e, portanto, os drones não serão enviados.")
       else:
             print("O limite de drones é de 1 a 999.")
 
@@ -302,9 +337,9 @@ opcaoMenu = 0
 while opcaoMenu != 9:
       print('\nSeja bem vindo à PlanTech! No que podemos te ajudar?'
             '\n'
-            '\n1. Desejo saber mais sobre a missão da PlanTech' #Luiz
+            '\n1. Desejo saber mais sobre a missão da PlanTech'
             '\n2. Desejo saber sobre o funcionamento do drone' #Igor
-            '\n3. Quero comprar um drone para detectar pragas' #Luiz
+            '\n3. Quero comprar um drone para detectar pragas'
             '\n4. Identifiquei uma praga na plantação. O que faço agora?'
             '\n5. Quem faz parte do projeto PlanTech?'
             '\n6. Quero indicar um tratamento para uma praga' #Gustavo
@@ -313,45 +348,34 @@ while opcaoMenu != 9:
             '\n9. Encerrar')
       opcaoMenu = int(input('Selecione uma das opções acima: '))
 
-#Opção 1 do menu: desejo saber mais sobre a missão da PlanTech ---- Colocar o primeiro e o último parágrafo do
-#   arquivo "Descrição geral da solução 2"
+#Opção 1 do menu: desejo saber mais sobre a missão da PlanTech
       if opcaoMenu == 1:
-            print("\n---- PlanTech ----"
-                        + "\n A fome e a insegurança alimentar são problemas mundiais que afetam milhões de pessoas e acarretam muitos" 
-                        + " outros problemas, como o nanismo e a caquexia. São muitos os fatores que podem levar à fome, tais como a falta de agricultura sustentável," 
-                        + " falta de acesso à alimentos, desigualdades, desemprego, alimentos não-nutritivos, entre outros fatores. Pensando nisso," 
-                        + " a PlanTech desenvolveu um projeto que visa a diminuição do desperdício de alimentos e o cultivo de alimentos mais saudáveis com o combate de pragas" 
-                        + " ainda em sua fase inicial de ataque nas plantações.   "
-                        + "\n Os benefícios dessa tecnologia é a detecção da praga em fase inicial, o que reduz o nível de perda de alimentos e o valor do produto final," 
-                        + " a preservação do solo e das plantações e a garantia de uma alimentação saudável e nutritiva – pois a indicação de tratamento da plantação é saudável." 
-                        + " Essa tecnologia pode ser levada para agricultores familiares e regiões mais afastadas que muito sofrem com esse problema, pois, dessa forma," 
-                        + " contribuirá com o acesso à uma tecnologia capaz de diminuir suas perdas de alimentos por pragas. Além disso, estes pequenos agricultores se sentirão mais confiantes" 
-                        + " em expandir sua área de plantio, já que não terá a preocupação com a perda de sua plantação.")
+            print('\n---- PlanTech ----'
+                        + '\n A fome e a insegurança alimentar são problemas mundiais que afetam milhões de pessoas e acarretam muitos'
+                        + ' outros problemas, como o nanismo e a caquexia. São muitos os fatores que podem levar à fome, tais como a falta de agricultura sustentável,'
+                        + ' falta de acesso à alimentos, desigualdades, desemprego, alimentos não-nutritivos, entre outros fatores. Pensando nisso,'
+                        + ' a PlanTech desenvolveu um projeto que visa a diminuição do desperdício de alimentos e o cultivo de alimentos mais saudáveis com o combate de pragas'
+                        + ' ainda em sua fase inicial de ataque nas plantações.   '
+                        + '\n Os benefícios dessa tecnologia é a detecção da praga em fase inicial, o que reduz o nível de perda de alimentos e o valor do produto final,'
+                        + ' a preservação do solo e das plantações e a garantia de uma alimentação saudável e nutritiva – pois a indicação de tratamento da plantação é saudável.'
+                        + ' Essa tecnologia pode ser levada para agricultores familiares e regiões mais afastadas que muito sofrem com esse problema, pois, dessa forma,'
+                        + ' contribuirá com o acesso à uma tecnologia capaz de diminuir suas perdas de alimentos por pragas. Além disso, estes pequenos agricultores se sentirão mais confiantes'
+                        + ' em expandir sua área de plantio, já que não terá a preocupação com a perda de sua plantação.')
+
 
 #Opção 2 do menu: desejo saber sobre o funcionamenento do drone ---- Colocar o segundo parágrafo do arquivo
 #   "Descrição geral da solução 2"
       if opcaoMenu == 2:
             print("-")
 
-#Opção 3 do menu: quero comprar um drone para detectar pragas ---- 1º: Falar que a PlanTech ainda é um projeto e, por 
-#   isso, ainda não foi desenvolvido drones para a venda; Perguntar se o usuário deseja fazer uma simulação de como
-#   seria essa etapa. Se não: dizer obrigada e retornar ao menu; 
-#   Se sim 2º: fazer cadastro do cliente com os dados (nome completo, RG ou CNH, CPF ou CNPJ, e-mail, telefone, rua,
-#   número de residência, se precisar de complemento, país, estado, cidade, bairro, CEP); Sistema deve validar todos
-#   esses dados. 
-#   3º: mostrar os dados informados pelo cliente e perguntar se eles estão corretos; 
-#   4º: perguntar quantos drones o usuário deseja comprar; 
-#   5º: dizer obrigada e que x drones serão entregues em até 15 dias no endereço mencionado; fazer uma observação 
-#   para dizer também que, como foi dito, este era apenas um teste e que, por isso, não foi pedido dados de
-#   pagamento e nem os drones serão entregues de fato ao endereço mencionado.
+
+#Opção 3 do menu: quero comprar um drone para detectar pragas 
       if opcaoMenu == 3:
-            print("\nA PlanTech ainda é um projeto em desenvolvimento, ainda não é possível realizar a compra dos drones.")
+            print("\nA PlanTech ainda é um projeto em desenvolvimento e, por isso, não é possível realizar a compra dos drones.")
             opcSimulacao = input("\nDeseja realizar uma simulação da compra dos drone que serão disponibilizados pela PlanTech? \n(1) - Sim \n(2) - Não \nEscolha uma opção: ")
             opcSimulacaoup = opcSimulacao.upper()
             if opcSimulacaoup == "1" or  opcSimulacaoup == "SIM":
                  Cadastro()
-
-
 
 
 #Opção 4 do menu: Identifiquei uma praga na plantação. O que faço agora?
@@ -371,9 +395,8 @@ while opcaoMenu != 9:
       if opcaoMenu == 6:
             print("-")
 
-#Opção 7 do menu: feedback ---- o usuário pode dar um feedback sobre a resolução de suas dúvidas, da performace do
-#   sistema, sobre a indicação dos tratamentos para as plantações, sobre a usabilidade do projeto e experiência com 
-#   o site
+
+#Opção 7 do menu: feedback
       if opcaoMenu == 7:
             #menu que pergunta para o usuário a escolha do feedback.
             feedback = int(input('\nPrimeiro, informe o tipo do feedback: \n(1) - Resolução de suas dúvidas \n(2) - Performace do sistema \n(3) - Indicação dos tratamentos para as plantações \n(4) - Usabilidade do projeto \n(5) - Experiência com o site'))
@@ -420,11 +443,13 @@ while opcaoMenu != 9:
                         reclamacao = input('Escreva sua reclamação ou aperte ENTER para enviar: ')
                         print(f'\nA PlanTech agradece pelo seu feedback!')
 
+
 #Opção 8 do menu: outro
       if opcaoMenu == 8:
             print('\nVeja só:')
             print('1. Se quiser retirar suas dúvidas mais específicas, entre no nosso ChatBot que ele te auxiliará')
             print('2. Se quer textos mais explicativos como agricultura sustentável, uso de IAs generativas na produção, distribuição de alimentos pelo mundo, modelos de cultivos eficientes, calendário de controle de pragas ou outros textos, entre no site da PlanTech')
+
 
 #Opção 9 do menu: encerramento
       if opcaoMenu == 9:
