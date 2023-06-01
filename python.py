@@ -182,37 +182,64 @@ def Indicacao():
 
 def Cadastro():
       confirmCadastroup = ""
-      opcIdentup = ""
-      opcIdent2up = ""
-      opcComplementoup = ""
-      confirmCadastroup = ""
-      rg = 0
       print("\nPor favor realize o cadastro: ")
-      while confirmCadastroup != "1" or confirmCadastroup != "SIM":
-            NomeCompleto = input("\nDigite seu nome: ")
+      while confirmCadastroup != "1" and confirmCadastroup != "SIM":
+            opcIdentup = ""
+            opcIdent2up = ""
+            opcComplementoup = ""
+            confirmCadastroup = ""
+            rg = ""
+            telefone = ""
+            cep = ""
+            cnh = ''
+            NomeCompleto = ""
+            email = ""
+            rua = ""
+            nmrResidencia = ""
+            pais = ""
+            estado = ""
+            cidade = ""
+            bairro = ""
+            while NomeCompleto == "":
+                  NomeCompleto = input("\nDigite seu nome: ")
             while opcIdentup != "1" and opcIdentup != "RG" and opcIdentup != "2" and opcIdentup != "CNH":
                   opcIdent = input("\n(1) - RG \n(2) - CNH \nEscolha qual você deseja informar: ")
                   opcIdentup = opcIdent.upper()
                   if opcIdentup == "1" or opcIdentup == "RG":
-                              try:
-                                    rg = int(input("\nRG: "))
-                                    if len(rg) != 9:
-                                          print("RG inválido!")
-                              except:
-                                    print("Digite apenas números!")
+                        while len(rg) != 9:      
+                              rg = input("\nRG: ")
+                              if  len(rg) != 9:
+                                    print("RG inválido! Digite apenas números.")
+                        
+                        #print("Digite apenas números!")
                   elif opcIdentup == "2" or opcIdentup == "CNH":
-                        cnh = input("\nCNH: ")
+                        while len(cnh) != 10:
+                              cnh = input("\nCNH: ")
+                              if len(cnh) != 10:
+                                    print("Digite um CNH válido. Não utilize indicadores.")
             while opcIdent2up != "1" and opcIdent2up != "CPF" and opcIdent2up and "2" and opcIdent2up != "CNPJ":
                   opcIdent2 = input("\n(1) - CPF \n(2) - CNPJ \nEscolha qual você deseja informar: ")
                   opcIdent2up = opcIdent2.upper()
                   if opcIdent2up == "1" or opcIdent2up == "CPF":
-                        cpf = input("\nCPF: ")
+                        while len(cpf) != 11:
+                              cpf = input("\nCPF: ")
+                              if len(cpf) != 11:
+                                    print("Digite um CPF válido. Utilize apenas números.")
                   elif opcIdent2up == "2" or opcIdent2up == "CNPJ":
-                        cnpj = input("\nCNPJ: ")
-            email = input("\nE-mail: ")
-            telefone = int(input("\nTelefone: "))
-            rua = input("\nRua: ")
-            nmrResidencia = input("\nNúmero de Residência: ")
+                        while len(cnpj) != 14:
+                              cnpj = input("\nCNPJ: ")
+                              if len(cnpj) != 14:
+                                    print("Digite um CNPJ válido. Não utilize indicadores.")
+            while email == "": 
+                  email = input("\nE-mail: ")
+            while len(telefone) != 14:
+                  telefone = input("\nTelefone: ")
+                  if len(telefone) != 14:
+                        print("Digite um telefone válido. Ex(+5511999999999).")
+            while rua == "":
+                  rua = input("\nRua: ")
+            while nmrResidencia == "":
+                  nmrResidencia = input("\nNúmero de Residência: ")
             while opcComplementoup != "1" and opcComplementoup != "SIM" and opcComplementoup != "2" and opcComplementoup != "NAO" and opcComplementoup != "NÃO":
                   opcComplemento = input("\n(1) - Sim \n(2) - Não \nDeseja informar um complemento?: ")
                   opcComplementoup = opcComplemento.upper()
@@ -220,11 +247,18 @@ def Cadastro():
                         complemento = input("\nComplemento: ")
                   elif opcComplementoup == "2" or opcComplementoup == "NAO" or opcComplementoup == "NÃO":
                         print("")
-            pais = input("\nPaís: ")
-            estado = input("\nEstado: ")
-            cidade = input("\nCidade: ")
-            bairro = input("\nBairro: ")
-            cep = input("\nCEP: ")
+            while pais == "":
+                  pais = input("\nPaís: ")
+            while estado == "":
+                  estado = input("\nEstado: ")
+            while cidade == "":
+                  cidade = input("\nCidade: ")
+            while bairro == "":
+                  bairro = input("\nBairro: ")
+            while len(cep) !=8:
+                  cep = input("\nCEP: ")
+                  if len(cep) != 8:
+                        print("Digite um CEP válido. Use apenas números.")
             print("\nConfirme as informações: ")
             while confirmCadastroup != "1" and confirmCadastroup != "SIM" and confirmCadastroup != "2" and confirmCadastroup != "NAO" and confirmCadastroup != "NÃO" :
             
@@ -232,11 +266,11 @@ def Cadastro():
                   print(f"Nome:  {NomeCompleto}")
                   if opcIdentup == "1" or opcIdentup == "RG":
                         print(f"RG: {rg}")
-                  elif opcIdentup == "2" or opcIdentup == "CNH":
+                  if opcIdentup == "2" or opcIdentup == "CNH":
                         print(f"CNH: {cnh}")
                   if opcIdent2up == "1" or opcIdent2up == "CPF":
                         print(f"CPF: {cpf}")
-                  elif opcIdent2up == "2" or opcIdent2up == "CNPJ":
+                  if opcIdent2up == "2" or opcIdent2up == "CNPJ":
                         print(f"CNPJ: {cnpj}")
                   print(f"E-mail: {email}")
                   print(f"Telefone: {telefone}")
@@ -245,7 +279,12 @@ def Cadastro():
                   print(f"Número de Residência: {nmrResidencia}")
                   if opcComplementoup == "1" or opcComplementoup == "SIM":
                         print(f"Complemento: {complemento}")
-                  confirmCadastro = input("\n(1) - Sim (2) - Não \nOs dados estão corretos? \nEscolha uma opção: ")
+                  print(f"País: {pais}")
+                  print(f"Estado: {estado}")
+                  print(f"Cidade: {cidade}")
+                  print(f"Bairro: {bairro}")
+                  print(f"CEP: {cep}")
+                  confirmCadastro = input("\n(1) - Sim \n(2) - Não \nOs dados estão corretos? \nEscolha uma opção: ")
                   confirmCadastroup = confirmCadastro.upper()
                   if confirmCadastroup == "1" or confirmCadastroup == "SIM": 
                         print("Concluímos seu cadastro!")
