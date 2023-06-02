@@ -1,5 +1,6 @@
 #Função que compara cada tipo de plantação com cada praga e retorna o tratamento mais adequado para a situação
-def Indicacao():
+def InformarTratamento():
+      #As quatro variáveis servem para armazenar o tipo de tratamento adequado
       spodovir = ('\n---Tratamento para a sua plantação: Spodovir---'
                   '\n1. É um biodefensivo e inseticida microbiológico'
                   '\n2. Deve ser utilizado assim que a praga for identificada ou de 10 a 22 dias após a germinação das plantações'
@@ -12,7 +13,7 @@ def Indicacao():
       
       bacillus = ('\n---Tratamento para a sua plantação: Bacillus Thuringienses---'
                   '\n1. É um inseticida biológico'
-                  '\n2. Inseticida biológico com a recomendação de pulverização sobre a cultura com a utilização de 500 a 750 gramas por hectare, sendo a utilização do volume da calda de 200 litros por hectare'
+                  '\n2. Recomendação de pulverização sobre a cultura com a utilização de 500 a 750 gramas por hectare, sendo a utilização do volume da calda de 200 litros por hectare'
                   '\n3. Para informações de como fazer, precauções e mais, leia a bula que vem junto ao produto no momento da compra.')
       
       aug = ('\n---Tratamento para a sua plantação: AUG 106---'
@@ -22,6 +23,7 @@ def Indicacao():
       nomePlanta = input('\nQual o nome da plantação atacada? ')
       nomePraga = input('Qual o nome da praga? ')
 
+      #Para transformar a informação passada pelo usuário em maiúsculo, assim evita muitos or nas comparações de strings
       nomePlanta = nomePlanta.upper()
       nomePraga = nomePraga.upper()
 
@@ -163,6 +165,7 @@ def Indicacao():
       else:
             return '\nEssa planta não está em nosso sistema'
 
+
 #Função para fazer o cadastro
 def Cadastro():
       confirmCadastroup = ''
@@ -185,6 +188,7 @@ def Cadastro():
             cidade = ''
             bairro = ''
 
+            #Para o usuário informar suas informações ao sistema
             while NomeCompleto == '':
                   NomeCompleto = input("\nDigite seu nome: ")
             while opcIdentup != "1" and opcIdentup != "RG" and opcIdentup != "2" and opcIdentup != "CNH":
@@ -194,13 +198,12 @@ def Cadastro():
                         while len(rg) != 9:      
                               rg = input("\nRG: ")
                               if  len(rg) != 9:
-                                    print("RG inválido! Digite os 9 números.")
-                        
+                                    print("Digite um RG válido com 9 números e sem indicadores.")
                   elif opcIdentup == "2" or opcIdentup == "CNH":
                         while len(cnh) != 10:
                               cnh = input("\nCNH: ")
                               if len(cnh) != 10:
-                                    print("Digite um CNH válido. Não utilize indicadores e digite 10 números.")
+                                    print("Digite uma CNH válida com 10 números e sem indicadores.")
 
             while opcIdent2up != "1" and opcIdent2up != "CPF" and opcIdent2up and "2" and opcIdent2up != "CNPJ":
                   opcIdent2 = input("\n(1) - CPF \n(2) - CNPJ \nEscolha qual você deseja informar: ")
@@ -209,12 +212,12 @@ def Cadastro():
                         while len(cpf) != 11:
                               cpf = input("\nCPF: ")
                               if len(cpf) != 11:
-                                    print("Digite um CPF válido. Digite apenas 11 números.")
+                                    print("Digite um CPF válido com 11 números e sem indicadores.")
                   elif opcIdent2up == "2" or opcIdent2up == "CNPJ":
                         while len(cnpj) != 14:
                               cnpj = input("\nCNPJ: ")
                               if len(cnpj) != 14:
-                                    print("Digite um CNPJ válido. Não utilize indicadores.")
+                                    print("Digite um CNPJ válido com 14 números e sem indicadores.")
 
             while email == "": 
                   email = input("\nE-mail: ")
@@ -244,9 +247,10 @@ def Cadastro():
             while len(cep) !=8:
                   cep = input("\nCEP: ")
                   if len(cep) != 8:
-                        print("Digite um CEP válido. Use apenas números.")
+                        print("Digite um CEP válido com 8 números e sem indicadores.")
             print("\nConfirme as informações: ")
 
+            #Para o usuário ver as informações que passou ao sistema
             while confirmCadastroup != "1" and confirmCadastroup != "SIM" and confirmCadastroup != "2" and confirmCadastroup != "NAO" and confirmCadastroup != "NÃO" :
             
                   print("\n--- Dados Pessoais ---")
@@ -261,6 +265,7 @@ def Cadastro():
                         print(f"CNPJ: {cnpj}")
                   print(f"E-mail: {email}")
                   print(f"Telefone: {telefone}")
+
                   print("\n--- Endereço ---")
                   print(f"Rua: {rua}")
                   print(f"Número de Residência: {nmrResidencia}")
@@ -272,6 +277,7 @@ def Cadastro():
                   print(f"Bairro: {bairro}")
                   print(f"CEP: {cep}")
 
+                  #Para confirmar o cadastro
                   confirmCadastro = input("\n(1) - Sim \n(2) - Não \nOs dados estão corretos? \nEscolha uma opção: ")
                   confirmCadastroup = confirmCadastro.upper()
                   if confirmCadastroup == "1" or confirmCadastroup == "SIM": 
@@ -279,24 +285,36 @@ def Cadastro():
                   elif confirmCadastroup == "2" or confirmCadastroup == "NAO" or confirmCadastroup == "NÃO":
                         print("Faça novamente o cadastro!")
 
+      #Para o usuário informar quantos drones deseja comprar
       qntdDrone = int(input("\nQuantos drones você deseja comprar? \nDrones: "))
+
       if qntdDrone > 0 and qntdDrone < 999:
             print(f"Obrigado pela compra! Seus {qntdDrone} drones chegarão em até 15 dias úteis.")
             print("Lembrando que foi apenas uma simulação, a PlanTech está em desenvolvimento portanto os drones não serão enviados.")
       else:
             print("O limite de drones é de 1 a 999.")
 
-#menu
+# Função para receber as informações do usuário e enviar para análise
+def IndicarTratamento():
+      print('\n--Preencha as informações: ---')
+
+      nomePraga = input('Nome da praga: ')
+      tipoPlantacao = input('Nome da plantação que ela ataca: ')
+      tratamento = input('Tipo de tratamento que a praga e a plantação devem receber: ')
+      return "\nObrigado pelas informações. Elas serão analisadas e, se estiverem corretas, serão incluídas no sistema PlanTech."
+
+
+#Menu de opções
 opcaoMenu = 0
 while opcaoMenu != 9:
       print('\nSeja bem vindo à PlanTech! No que podemos te ajudar?'
             '\n'
             '\n1. Desejo saber mais sobre a missão da PlanTech'
-            '\n2. Desejo saber sobre o funcionamento do drone' #Igor
+            '\n2. Desejo saber sobre o funcionamento do drone'
             '\n3. Quero comprar um drone para detectar pragas'
             '\n4. Identifiquei uma praga na plantação. O que faço agora?'
             '\n5. Quem faz parte do projeto PlanTech?'
-            '\n6. Quero indicar um tratamento para uma praga' #Gustavo
+            '\n6. Quero indicar um tratamento para uma praga'
             '\n7. Feedback'
             '\n8. Outro'
             '\n9. Encerrar')
@@ -305,30 +323,31 @@ while opcaoMenu != 9:
 #Opção 1 do menu: desejo saber mais sobre a missão da PlanTech
       if opcaoMenu == 1:
             print('\n---- PlanTech ----'
-                        + '\n A fome e a insegurança alimentar são problemas mundiais que afetam milhões de pessoas e acarretam muitos'
-                        + ' outros problemas, como o nanismo e a caquexia. São muitos os fatores que podem levar à fome, tais como a falta de agricultura sustentável,'
-                        + ' falta de acesso à alimentos, desigualdades, desemprego, alimentos não-nutritivos, entre outros fatores. Pensando nisso,'
-                        + ' a PlanTech desenvolveu um projeto que visa a diminuição do desperdício de alimentos e o cultivo de alimentos mais saudáveis com o combate de pragas'
-                        + ' ainda em sua fase inicial de ataque nas plantações.   '
-                        + '\n Os benefícios dessa tecnologia é a detecção da praga em fase inicial, o que reduz o nível de perda de alimentos e o valor do produto final,'
-                        + ' a preservação do solo e das plantações e a garantia de uma alimentação saudável e nutritiva – pois a indicação de tratamento da plantação é saudável.'
-                        + ' Essa tecnologia pode ser levada para agricultores familiares e regiões mais afastadas que muito sofrem com esse problema, pois, dessa forma,'
-                        + ' contribuirá com o acesso à uma tecnologia capaz de diminuir suas perdas de alimentos por pragas. Além disso, estes pequenos agricultores se sentirão mais confiantes'
-                        + ' em expandir sua área de plantio, já que não terá a preocupação com a perda de sua plantação.')
+                        + '\n A fome e a insegurança alimentar são problemas mundiais que afetam milhões de pessoas.'
+                        + '\n Isto acarreta em outros problemas, como o nanismo e a caquexia.'
+                        + '\n São muitos os fatores que podem levar à fome, tais como a falta de agricultura sustentável, falta de acesso à alimentos, desigualdades, desemprego, alimentos não-nutritivos, entre outros fatores.'
+                        + '\n Pensando nisso, a PlanTech desenvolveu um projeto que visa a diminuição do desperdício de alimentos e o cultivo de alimentos mais saudáveis com o combate de pragas ainda em sua fase inicial de ataque nas plantações.'
+                        + '\n\n Os benefícios dessa tecnologia é a detecção da praga em fase inicial, o que reduz:'
+                        + '\n 1. O nível de perda de alimentos' 
+                        + '\n 2. O valor do produto final'
+                        + '\n 3. A preservação do solo e das plantações'
+                        + '\n 4. A garantia de uma alimentação saudável e nutritiva'
+                        + '\n\n Essa tecnologia pode ser levada para agricultores familiares e regiões mais afastadas que muito sofrem com esse problema'
+                        + '\n Dessa forma, contribuirá com o acesso à uma tecnologia capaz de diminuir suas perdas de alimentos por pragas.'
+                        + '\n Além disso, estes pequenos agricultores se sentirão mais confiantes e seguros em expandir sua área de plantio.')
 
 
-#Opção 2 do menu: desejo saber sobre o funcionamenento do drone ---- Colocar o segundo parágrafo do arquivo
-#   "Descrição geral da solução 2"
+#Opção 2 do menu: desejo saber sobre o funcionamenento do drone
       if opcaoMenu == 2:
             print("\n----PlanTech ----"
-                        +"\n Para isso, será desenvolvido um drone robô  drone robô que detecta pragas nas plantações e informa suas localidades para o combate."
-                        +"Essa detecção é por meio de uma IA generativa que identifica as pragas nas plantações com infravermelho ainda na fase inicial e informa ao dono da plantação o nome da praga e o seu local no visor do drone."
-                        +"Com essa informação, o dono da plantação entra no sistema da PlanTech e informa o nome da praga e qual plantação ela está atacando para que, dessa forma, seja indicado um tratamento saudável e sustentável para que aquela plantação não seja perdida, danificada e nem tenha alastramento das pragas."
-                        +"Com essa informação, o dono da plantação entra no sistema da PlanTech e informa o nome da praga e qual plantação ela está atacando para que, dessa forma, seja indicado um tratamento saudável e sustentável para que aquela plantação não seja perdida, danificada e nem tenha alastramento das pragas. "
-                        +"Este drone funciona sozinho e é recarregável, sendo necessário somente ligar ele para que ele sobrevoe a plantação em busca de possíveis pragas."
-                        +"O usuário pode também entrar em contato com o nosso ChatBot para solucionar possíveis dúvidas, dar seu feedback e entrar no site da PlanTech para mais informações sobre agricultura ou semelhantes. "
-                        +"Além disso, o agricultor pode contribuir com informações de pragas e tratamentos que não tenham no site.")
-
+                        + '\n Será desenvolvido um drone robô que detecta pragas nas plantações e informa suas localidades para o combate.'
+                        + '\n Essa detecção é por meio de uma IA generativa que identifica as pragas com infravermelho ainda na fase inicial.'
+                        + '\n Depois de detectar, ela informa o nome da praga e o seu local no visor do drone.'
+                        + '\n Com essa informação, basta entrar no sistema da PlanTech e informar o nome da praga e qual plantação ela está atacando.'
+                        + '\n Assim será indicado um tratamento saudável e sustentável para que a plantação não seja perdida, danificada e nem tenha alastramento das pragas.'
+                        + '\n Este drone funciona sozinho e é recarregável, sendo necessário somente ligá-lo para que sobrevoe a plantação em busca de possíveis pragas.'
+                        + '\n O usuário pode também entrar em contato com o nosso ChatBot para solucionar possíveis dúvidas, dar seu feedback e ir no site da PlanTech para mais informações sobre agricultura ou semelhantes. '
+                        + '\n Além disso, o agricultor pode contribuir com informações de pragas e tratamentos que não tenham no site.')
 
 
 #Opção 3 do menu: quero comprar um drone para detectar pragas 
@@ -342,44 +361,36 @@ while opcaoMenu != 9:
 
 #Opção 4 do menu: Identifiquei uma praga na plantação. O que faço agora?
       if opcaoMenu == 4:
-            print(Indicacao())
+            print(InformarTratamento())
 
 
-#Opção 5 do menu: quem faz parte do projeto PlanTech? ---- Colocar o nome e RM de todos do grupo
+#Opção 5 do menu: quem faz parte do projeto PlanTech?
       if opcaoMenu == 5:
-            print('\n---Responsáveis pelo projeto PlanTech--- \nDouglas Magalhães de Araujo - rm552008 \nGustavo Arguello Bertacci - rm551304 \nIgor Ribeiro Anccilotto - rm550415 \nLuiz Fillipe Farias - rm99519 \nRafaella Monique do Carmo Bastos - rm552425')
+            print('\n---Responsáveis pelo projeto PlanTech---'
+                  +' \n Douglas Magalhães de Araujo - rm552008'
+                  +' \n Gustavo Arguello Bertacci - rm551304' 
+                  +' \n Igor Ribeiro Anccilotto - rm550415'
+                  +' \n Luiz Fillipe Farias - rm99519' 
+                  +' \n Rafaella Monique do Carmo Bastos - rm552425')
 
 
-#Opção 6 do menu: quero indicar o tratamento para uma praga ---- Deixar com que o usuário informe o nome de uma 
-#   praga, o tipo de plantação que essa praga ataca e o tipo de tratamento que essa praga combinada com essa 
-#   plantação pode receber; Mostrar uma mensagem agradecendo e dizendo que essas informações vão para análise e
-#   se estiver tudo correto, serão incluídas no sistema PlanTech
+#Opção 6 do menu: quero indicar o tratamento para uma praga
       if opcaoMenu == 6:
-            # Função para receber as informações do usuário e enviar para análise
-            def informar_tratamento():
-                  nome_praga = input("Informe o nome da praga: ")
-                  tipo_plantacao = input("Informe o tipo de plantação que a praga ataca: ")
-                  tratamento = input("Informe o tipo de tratamento que a praga combinada com essa plantação pode receber: ")
-
-                  # Enviar as informações para análise
-                  enviar_analise(nome_praga, tipo_plantacao, tratamento)
-
-                  # Exibir mensagem de agradecimento
-                  print("Obrigado pelas informações. Elas serão analisadas e, se estiverem corretas, serão incluídas no sistema PlanTech.")
-
-      # Função para enviar as informações para análise
-      def enviar_analise(nome_praga, tipo_plantacao, tratamento):
-
-            # Chamada da função para o usuário informar o tratamento
-            informar_tratamento()
+            print(IndicarTratamento())
             
-
 
 #Opção 7 do menu: feedback
       if opcaoMenu == 7:
-            #menu que pergunta para o usuário a escolha do feedback.
-            feedback = int(input('\nPrimeiro, informe o tipo do feedback: \n(1) - Resolução de suas dúvidas \n(2) - Performace do sistema \n(3) - Indicação dos tratamentos para as plantações \n(4) - Usabilidade do projeto \n(5) - Experiência com o site \n-Opção: '))
-            #se o usuário digitar um número maior ou menor, aparece uma mensagem de erro.
+            #Menu que pergunta para o usuário a escolha do feedback.
+            feedback = int(input('\nPrimeiro, informe o tipo do feedback: '
+                              +'\n (1) - Resolução de suas dúvidas'
+                              +'\n (2) - Performace do sistema' 
+                              +'\n (3) - Indicação dos tratamentos para as plantações' 
+                              +'\n (4) - Usabilidade do projeto' 
+                              +'\n (5) - Experiência com o site'
+                              +'\n -Opção: '))
+            
+            #Se o usuário digitar um número maior que 5 ou menor que 1, aparece uma mensagem de erro.
             if feedback < 1 or feedback > 5:
                   print('Escolha incorreta! Escolha um número de 1 a 5.')
 
@@ -387,12 +398,13 @@ while opcaoMenu != 9:
             elif feedback == 1:
                   notaFeedback = int(input('Digite a nota que desejar (0-10): '))
                   
-                  #Se o usuário digitar um número maior ou menor, aparece uma mensagem de erro.
+                  #Se o usuário digitar um número maior que 10 ou menor que 0, aparece uma mensagem de erro.
                   if notaFeedback < 0 or notaFeedback > 10:
                         print('Os números permitidos são apenas de 0 a 10!')
                   else:
                         reclamacao = input('Escreva sua reclamação ou aperte ENTER para enviar: ')
                         print(f'\nA PlanTech agradece pelo seu feedback!')
+
             elif feedback == 2:
                   notaFeedback = int(input('Digite a nota que desejar (0-10): '))
                   if notaFeedback < 0 or notaFeedback > 10:
@@ -400,6 +412,7 @@ while opcaoMenu != 9:
                   else:
                         reclamacao = input('Escreva sua reclamação ou aperte ENTER para enviar: ')
                         print(f'\nA PlanTech agradece pelo seu feedback!')
+
             elif feedback == 3:
                   notaFeedback = int(input('Digite a nota que desejar (0-10): '))
                   if notaFeedback < 0 or notaFeedback > 10:
@@ -407,6 +420,7 @@ while opcaoMenu != 9:
                   else:
                         reclamacao = input('Escreva sua reclamação ou aperte ENTER para enviar: ')
                         print(f'\nA PlanTech agradece pelo seu feedback!')
+
             elif feedback == 4:
                   notaFeedback = int(input('Digite a nota que desejar (0-10): '))
                   if notaFeedback < 0 or notaFeedback > 10:
@@ -414,6 +428,7 @@ while opcaoMenu != 9:
                   else:
                         reclamacao = input('Escreva sua reclamação ou aperte ENTER para enviar: ')
                         print(f'\nA PlanTech agradece pelo seu feedback!')
+
             elif feedback == 5:
                   notaFeedback = int(input('Digite a nota que desejar (0-10): '))
                   if notaFeedback < 0 or notaFeedback > 10:
@@ -427,7 +442,7 @@ while opcaoMenu != 9:
       if opcaoMenu == 8:
             print('\nVeja só:')
             print('1. Se quiser retirar suas dúvidas mais específicas, entre no nosso ChatBot que ele te auxiliará')
-            print('2. Se quer textos mais explicativos como agricultura sustentável, uso de IAs generativas na produção, distribuição de alimentos pelo mundo, modelos de cultivos eficientes, calendário de controle de pragas ou outros textos, entre no site da PlanTech')
+            print('2. Se quer textos mais explicativos como agricultura, IAs generativas ou outros textos, entre no site da PlanTech')
 
 
 #Opção 9 do menu: encerramento
