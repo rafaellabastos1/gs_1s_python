@@ -194,13 +194,13 @@ def Cadastro():
                         while len(rg) != 9:      
                               rg = input("\nRG: ")
                               if  len(rg) != 9:
-                                    print("RG inválido! Digite apenas números.")
+                                    print("RG inválido! Digite os 9 números.")
                         
                   elif opcIdentup == "2" or opcIdentup == "CNH":
                         while len(cnh) != 10:
                               cnh = input("\nCNH: ")
                               if len(cnh) != 10:
-                                    print("Digite um CNH válido. Não utilize indicadores.")
+                                    print("Digite um CNH válido. Não utilize indicadores e digite 10 números.")
 
             while opcIdent2up != "1" and opcIdent2up != "CPF" and opcIdent2up and "2" and opcIdent2up != "CNPJ":
                   opcIdent2 = input("\n(1) - CPF \n(2) - CNPJ \nEscolha qual você deseja informar: ")
@@ -209,7 +209,7 @@ def Cadastro():
                         while len(cpf) != 11:
                               cpf = input("\nCPF: ")
                               if len(cpf) != 11:
-                                    print("Digite um CPF válido. Utilize apenas números.")
+                                    print("Digite um CPF válido. Digite apenas 11 números.")
                   elif opcIdent2up == "2" or opcIdent2up == "CNPJ":
                         while len(cnpj) != 14:
                               cnpj = input("\nCNPJ: ")
@@ -281,8 +281,8 @@ def Cadastro():
 
       qntdDrone = int(input("\nQuantos drones você deseja comprar? \nDrones: "))
       if qntdDrone > 0 and qntdDrone < 999:
-            print(f"\nObrigado pela compra! Seus {qntdDrone} drones chegaram em até 15 dias úteis.")
-            print("Lembramos que foi apenas uma simulação, a PlanTech está em desenvolvimento e, portanto, os drones não serão enviados.")
+            print(f"Obrigado pela compra! Seus {qntdDrone} drones chegarão em até 15 dias úteis.")
+            print("Lembrando que foi apenas uma simulação, a PlanTech está em desenvolvimento portanto os drones não serão enviados.")
       else:
             print("O limite de drones é de 1 a 999.")
 
@@ -347,13 +347,30 @@ while opcaoMenu != 9:
 #   plantação pode receber; Mostrar uma mensagem agradecendo e dizendo que essas informações vão para análise e
 #   se estiver tudo correto, serão incluídas no sistema PlanTech
       if opcaoMenu == 6:
-            print("-")
+            # Função para receber as informações do usuário e enviar para análise
+            def informar_tratamento():
+                  nome_praga = input("Informe o nome da praga: ")
+                  tipo_plantacao = input("Informe o tipo de plantação que a praga ataca: ")
+                  tratamento = input("Informe o tipo de tratamento que a praga combinada com essa plantação pode receber: ")
+
+                  # Enviar as informações para análise
+                  enviar_analise(nome_praga, tipo_plantacao, tratamento)
+
+                  # Exibir mensagem de agradecimento
+                  print("Obrigado pelas informações. Elas serão analisadas e, se estiverem corretas, serão incluídas no sistema PlanTech.")
+
+      # Função para enviar as informações para análise
+      def enviar_analise(nome_praga, tipo_plantacao, tratamento):
+
+            # Chamada da função para o usuário informar o tratamento
+            informar_tratamento()
+            
 
 
 #Opção 7 do menu: feedback
       if opcaoMenu == 7:
             #menu que pergunta para o usuário a escolha do feedback.
-            feedback = int(input('\nPrimeiro, informe o tipo do feedback: \n(1) - Resolução de suas dúvidas \n(2) - Performace do sistema \n(3) - Indicação dos tratamentos para as plantações \n(4) - Usabilidade do projeto \n(5) - Experiência com o site'))
+            feedback = int(input('\nPrimeiro, informe o tipo do feedback: \n(1) - Resolução de suas dúvidas \n(2) - Performace do sistema \n(3) - Indicação dos tratamentos para as plantações \n(4) - Usabilidade do projeto \n(5) - Experiência com o site \n-Opção: '))
             #se o usuário digitar um número maior ou menor, aparece uma mensagem de erro.
             if feedback < 1 or feedback > 5:
                   print('Escolha incorreta! Escolha um número de 1 a 5.')
