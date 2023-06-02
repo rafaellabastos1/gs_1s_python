@@ -209,14 +209,14 @@ def Cadastro():
                         while len(rg) != 9:      
                               rg = input("\nRG: ")
                               if  len(rg) != 9:
-                                    print("RG inválido! Digite apenas números.")
+                                    print("RG inválido! Digite os 9 números.")
                         
                         #print("Digite apenas números!")
                   elif opcIdentup == "2" or opcIdentup == "CNH":
                         while len(cnh) != 10:
                               cnh = input("\nCNH: ")
                               if len(cnh) != 10:
-                                    print("Digite um CNH válido. Não utilize indicadores.")
+                                    print("Digite um CNH válido. Não utilize indicadores e digite 10 números.")
             while opcIdent2up != "1" and opcIdent2up != "CPF" and opcIdent2up and "2" and opcIdent2up != "CNPJ":
                   opcIdent2 = input("\n(1) - CPF \n(2) - CNPJ \nEscolha qual você deseja informar: ")
                   opcIdent2up = opcIdent2.upper()
@@ -224,7 +224,7 @@ def Cadastro():
                         while len(cpf) != 11:
                               cpf = input("\nCPF: ")
                               if len(cpf) != 11:
-                                    print("Digite um CPF válido. Utilize apenas números.")
+                                    print("Digite um CPF válido. Digite apenas 11 números.")
                   elif opcIdent2up == "2" or opcIdent2up == "CNPJ":
                         while len(cnpj) != 14:
                               cnpj = input("\nCNPJ: ")
@@ -292,8 +292,8 @@ def Cadastro():
                         print("Faça novamente o cadastro!")
       qntdDrone = int(input("\nQuantos drones você deseja comprar? \nDrones: "))
       if qntdDrone > 0 and qntdDrone < 999:
-            print(f"Obrigado pela compra! Seus {qntdDrone} drones chegaram em até 15 dias úteis.")
-            print("Lembramos que foi apenas uma simulação, a PlanTech está em desenvolvimento portanto os drones não serão enviados.")
+            print(f"Obrigado pela compra! Seus {qntdDrone} drones chegarão em até 15 dias úteis.")
+            print("Lembrando que foi apenas uma simulação, a PlanTech está em desenvolvimento portanto os drones não serão enviados.")
       else:
             print("O limite de drones é de 1 a 999.")
 
