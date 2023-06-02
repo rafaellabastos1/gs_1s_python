@@ -16,6 +16,36 @@ Para isso, será desenvolvido um drone robô que detecta pragas nas plantações
 ### Benefícios
 Os benefícios dessa tecnologia é a detecção da praga em fase inicial, o que reduz o nível de perda de alimentos e o valor do produto final, a preservação do solo e das plantações e a garantia de uma alimentação saudável e nutritiva – pois a indicação de tratamento da plantação é saudável. Essa tecnologia pode ser levada para agricultores familiares e regiões mais afastadas que muito sofrem com esse problema, pois, dessa forma, contribuirá com o acesso à uma tecnologia capaz de diminuir suas perdas de alimentos por pragas. Além disso, estes pequenos agricultores se sentirão mais confiantes em expandir sua área de plantio, já que não terá a preocupação com a perda de sua plantação.
 
+## Funcionalidades:
+A partir do menu, o usuário tem acesso às seguintes funcionalidades do sistema:
+
+### Desejo saber mais sobre a missão da PlanTech
+Nesta funcionalidade, o usuário saberá o que a PlanTech faz, quais são seus objetivos e o que pretende alcançar com este projeto.
+
+### Desejo saber sobre o funcionamento do drone
+Nesta funcionalidade, o usuário saberá como funciona o drone, o que ele faz, como ele é capaz de identificar pragas, o que fazer após a identificação de uma praga, entre outras coisas.
+
+### Quero comprar um drone
+Nesta funcionalidade, é informado ao usuário que ainda não é possível comprar os drones, mas que ele pode fazer uma simulação de como seria esse processo. Caso ele queira, é simulado um cadastro com dados pessoais e de seu endereço e quantos drones ele gostaria de comprar.
+
+### Identifiquei uma praga na plantação. O que faço agora?
+Esta funcionalidade diz respeito à principal parte do sistema: a recomendação saudável e não-tóxica de um tratamento para as pragas nas plantações. O usuário informa ao sistema o nome da plantação e o nome da praga que está atacado e, com isso, é recomendado um tipo de tratamento de combate às pragas.
+
+### Quem faz parte do projeto PlanTech?
+Nesta funcionalidade, o usuário saberá quem são as pessoas que trabalham no projeto da PlanTech.
+
+### Quero indicar um tratamento para uma praga
+Nesta funcionalidade, o usuário pode indicar um tratamento que não tenha no sistema para que seja analisado e, se estiver tudo ok, será implementado juntos aos outros tratamentos disponíveis.
+
+### Feedback
+Nesta funcionalidade, o usuário dará feedback's em questão de resolução de suas dúvidas, performace do sistema, indicação dos tratamentos para as plantações, usabilidade do projeto e experiência com o site.
+
+### Outro
+Nesta funcionalidade, será informado ao usuário o local no qual ele pode retirar suas dúvidas e no qual ele pode ter acesso à textos informativos.
+
+### Encerrar
+Nesta funcionalidade, o programa é encerrado
+
 ## Instruções de uso:
 
 ## Requisitos:
