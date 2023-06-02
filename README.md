@@ -56,7 +56,7 @@ Nesta funcionalidade, o programa é encerrado
 6. Se a opção escolhida for 4, você terá que passar o nome da praga e o nome da plantação que ela está atacando
 
 ## Requisitos:
-Ter um aplicativo que rode arquivos .py no sistema
+Ter uma IDE que rode arquivos .py no sistema
 
 ## Dependências:
 Nenhuma dependência é necessária para a execução desse programa
