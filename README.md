@@ -1,7 +1,7 @@
 # PlanTech
 
 ## Integrantes do projeto:
-</br> Douglas Magalhães de Araújo - RM: 552008
+Douglas Magalhães de Araújo - RM: 552008
 </br> Gustavo Argüello Bertacci - RM: 551304
 </br> Igor Ribeiro Anccilotto - RM: 550415
 </br> Luiz Fillipe Farias - RM: 99519
