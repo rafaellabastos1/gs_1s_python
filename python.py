@@ -393,7 +393,7 @@ while opcaoMenu != 9:
 #   o site
       if opcaoMenu == 7:
             #menu que pergunta para o usuário a escolha do feedback.
-            feedback = int(input('\nPrimeiro, informe o tipo do feedback: \n(1) - Resolução de suas dúvidas \n(2) - Performace do sistema \n(3) - Indicação dos tratamentos para as plantações \n(4) - Usabilidade do projeto \n(5) - Experiência com o site'))
+            feedback = int(input('\nPrimeiro, informe o tipo do feedback: \n(1) - Resolução de suas dúvidas \n(2) - Performace do sistema \n(3) - Indicação dos tratamentos para as plantações \n(4) - Usabilidade do projeto \n(5) - Experiência com o site \n-Opção: '))
             #se o usuário digitar um número maior ou menor, aparece uma mensagem de erro.
             if feedback < 1 or feedback > 5:
                   print('Escolha incorreta! Escolha um número de 1 a 5.')
