@@ -1,21 +1,21 @@
 #Função que compara cada tipo de plantação com cada praga e retorna o tratamento mais adequado para a situação
 def Indicacao():
-      spodovir = ('\nTratamento para a sua plantação: Spodovir'
+      spodovir = ('\n---Tratamento para a sua plantação: Spodovir---'
                   '\n1. É um biodefensivo e inseticida microbiológico'
                   '\n2. Deve ser utilizado assim que a praga for identificada ou de 10 a 22 dias após a germinação das plantações'
                   '\n3. É recomendado pulverizar o produto sobre a cultura com a utilização do volume da calda de 150 litros do produto por hectare se for por via terrestre ou 50 litros do produto por hectare se for por via aérea'
                   '\n4. Uma dose pode ser diluída em 1 litro de água'
                   '\n5. Para informações de como fazer, precauções e mais, leia a bula que vem junto ao produto no momento da compra.')
       
-      engeoPlenoS = ('\nTratamento para a sua platação: Engeo Pleno S'
+      engeoPlenoS = ('\n---Tratamento para a sua platação: Engeo Pleno S---'
                      '\n1. Para informações de como fazer, precauções e mais, leia a bula que vem junto ao produto no momento da compra.') 
       
-      bacillus = ('\nTratamento para a sua plantação: Bacillus Thuringienses'
+      bacillus = ('\n---Tratamento para a sua plantação: Bacillus Thuringienses---'
                   '\n1. É um inseticida biológico'
                   '\n2. Inseticida biológico com a recomendação de pulverização sobre a cultura com a utilização de 500 a 750 gramas por hectare, sendo a utilização do volume da calda de 200 litros por hectare'
                   '\n3. Para informações de como fazer, precauções e mais, leia a bula que vem junto ao produto no momento da compra.')
       
-      aug = ('\nTratamento para a sua plantação: AUG 106'
+      aug = ('\n---Tratamento para a sua plantação: AUG 106---'
              '\n1. É um inseticida de suspensão concentrada'
              '\n2. Para informações de como fazer, precauções e mais, leia a bula que vem junto ao produto no momento da compra.')
       
@@ -45,7 +45,7 @@ def Indicacao():
             elif nomePraga == 'CUPIM DE MONTÍCULO' or nomePraga == 'CUPIM DE MONTICULO':       
                   return f'{aug}\nObservação: 720 mL a cada 100kg com no máximo 1 aplicação; o volume da calda deve ser de 500mL a cada 100kg.'
             else:
-                  print('Essa praga não está em nosso sistema')
+                  return '\nEssa praga não está em nosso sistema'
       
 
       #Arroz
@@ -56,7 +56,7 @@ def Indicacao():
             elif nomePraga == 'PERCEVEJO-DO-ARROZ' or nomePraga == 'PERCEVEJO DO ARROZ':
                   return f'{engeoPlenoS}\nObservação: de 150 a 200 mL por hectare com no máximo 1 aplicação; o volume da calda deve ser de 200 litros por hectare'
             else:
-                  print('Essa praga não está em nosso sistema')
+                  return '\nEssa praga não está em nosso sistema'
       
 
       #Aveia
@@ -64,7 +64,7 @@ def Indicacao():
             if nomePraga == 'LAGARTA-DO-CARTUCHO' or nomePraga == 'LAGARTA DO CARTUCHO':
                   return spodovir
             else:
-                  print('Essa praga não está em nosso sistema')
+                  return '\nEssa praga não está em nosso sistema'
       
 
       #Café
@@ -72,15 +72,15 @@ def Indicacao():
             if nomePraga == 'LAGARTA HELICOVERPA':
                   return bacillus
             else:
-                  print('Essa praga não está em nosso sistema')
+                  return '\nEssa praga não está em nosso sistema'
 
 
       #Cana-de-açúcar
-      elif nomePlanta == 'CANA-DE-AÇÚCAR' or 'CANA-DE-AÇUCAR' or 'CANA-DE-ACUCAR' or 'CANA DE AÇÚCAR' or 'CANA DE AÇUCAR' or 'CANA DE AÇUCAR' or 'CANA DE ACUCAR':
+      elif nomePlanta == 'CANA-DE-AÇÚCAR' or nomePlanta == 'CANA-DE-AÇUCAR' or nomePlanta == 'CANA-DE-ACUCAR' or nomePlanta == 'CANA DE AÇÚCAR' or nomePlanta == 'CANA DE AÇUCAR' or nomePlanta == 'CANA DE AÇUCAR' or nomePlanta == 'CANA DE ACUCAR':
             if nomePraga == 'LAGARTA-DO-CARTUCHO' or nomePraga == 'LAGARTA DO CARTUCHO':
                   return spodovir
             else:
-                  print('Essa praga não está em nosso sistema')
+                  return '\nEssa praga não está em nosso sistema'
       
 
       #Feijão
@@ -90,7 +90,7 @@ def Indicacao():
             elif nomePraga == 'LAGARTA HELICOVERPA':
                   return bacillus
             else:
-                  print('Essa praga não está em nosso sistema')
+                  return '\nEssa praga não está em nosso sistema'
       
 
       #Girassol
@@ -104,7 +104,7 @@ def Indicacao():
             elif nomePraga == 'PERCEVEJO-MARROM' or nomePraga == 'PERCEVEJO MARROM':
                   return f'{engeoPlenoS}\nObservação: de 300 a 400 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 150 litros por hectare'
             else:
-                  print('Essa praga não está em nosso sistema')
+                  return '\nEssa praga não está em nosso sistema'
       
       
       #Milho
@@ -127,7 +127,7 @@ def Indicacao():
             elif nomePraga == 'PULGÃO' or nomePraga == 'PULGAO':
                   return f'{aug}\nObservação: 480 mL para cada 100kg com apenas uma aplicação; o volume da calda deve ser 500 mL para cada 100kg'
             else:
-                  print('Essa praga não está em nosso sistema')
+                  return '\nEssa praga não está em nosso sistema'
       
 
       #Soja
@@ -147,7 +147,7 @@ def Indicacao():
             elif nomePraga == 'LAGARTA HELICOVERPA':
                   return bacillus
             else:
-                  print('Essa praga não está em nosso sistema')
+                  return '\nEssa praga não está em nosso sistema'
 
 
       #Trigo
@@ -159,9 +159,9 @@ def Indicacao():
             elif nomePraga == 'PERCEVEJO-BARRIGA-VERDE' or nomePraga == 'PERCEVEJO BARRIGA VERDE':
                   return f'{engeoPlenoS}\nObservação: 150 mL por hectare com no máximo 2 aplicações, uma a cada 7 dias; o volume da calda deve ser de 200 litros por hectare'
             else:
-                  print('Essa praga não está em nosso sistema')
+                  return '\nEssa praga não está em nosso sistema'
       else:
-            print('Essa planta não está em nosso sistema')
+            return '\nEssa planta não está em nosso sistema'
 
 #Função para fazer o cadastro
 def Cadastro():
@@ -281,7 +281,7 @@ def Cadastro():
 
       qntdDrone = int(input("\nQuantos drones você deseja comprar? \nDrones: "))
       if qntdDrone > 0 and qntdDrone < 999:
-            print(f"Obrigado pela compra! Seus {qntdDrone} drones chegaram em até 15 dias úteis.")
+            print(f"\nObrigado pela compra! Seus {qntdDrone} drones chegaram em até 15 dias úteis.")
             print("Lembramos que foi apenas uma simulação, a PlanTech está em desenvolvimento e, portanto, os drones não serão enviados.")
       else:
             print("O limite de drones é de 1 a 999.")
@@ -339,7 +339,7 @@ while opcaoMenu != 9:
 
 #Opção 5 do menu: quem faz parte do projeto PlanTech? ---- Colocar o nome e RM de todos do grupo
       if opcaoMenu == 5:
-            print('\nTodas as pessoas responsáveis pelo projeto PlanTech são: \nDouglas Magalhães de Araujo - rm552008 \nGustavo Arguello Bertacci - rm551304 \nIgor Ribeiro Anccilotto - rm550415 \nLuiz Fillipe Farias - rm99519 \nRafaella Monique do Carmo Bastos - rm552425')
+            print('\n---Responsáveis pelo projeto PlanTech--- \nDouglas Magalhães de Araujo - rm552008 \nGustavo Arguello Bertacci - rm551304 \nIgor Ribeiro Anccilotto - rm550415 \nLuiz Fillipe Farias - rm99519 \nRafaella Monique do Carmo Bastos - rm552425')
 
 
 #Opção 6 do menu: quero indicar o tratamento para uma praga ---- Deixar com que o usuário informe o nome de uma 
