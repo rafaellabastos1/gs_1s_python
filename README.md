@@ -47,6 +47,13 @@ Nesta funcionalidade, será informado ao usuário o local no qual ele pode retir
 Nesta funcionalidade, o programa é encerrado
 
 ## Instruções de uso:
+1. Fazer o dowloand do arquivo plantech.py
+2. Executar o programa no terminal
+3. Escolher a opção que deseja no menu que aparecerá
+4. Seguir os passos especificados na opção escolhida
+
+5. Se a opção escolhida for 3, você terá que passar algumas informações suas para a simulação
+6. Se a opção escolhida for 4, você terá que passar o nome da praga e o nome da plantação que ela está atacando
 
 ## Requisitos:
 
